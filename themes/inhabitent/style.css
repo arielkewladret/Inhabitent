@@ -433,14 +433,17 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: end;
+      align-content: flex-end; }
   .main-navigation ul {
     display: none;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding: 0; }
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -450,7 +453,6 @@ a {
       left: -999rem;
       z-index: 99999; }
       .main-navigation ul ul ul {
-        left: -999rem;
         top: 0; }
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
@@ -670,3 +672,65 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/* Take out and use in variables later */
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white; }
+
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: url(./images/dark-wood@2x.png);
+  /* background: url(./images/logos/inhabitent-logo-text-dark.svg); */
+  height: 350px;
+  background-size: contain;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 55px 80px;
+  color: white;
+  /* font-family: $font__merriweather; */
+  font-size: 15px;
+  line-height: 1.5; }
+
+/* background: url(./images/logos/inhabitent-logo-full.svg), no-repeat; */
+/* .footer-block {
+    /* width: 25%; */
+/* padding: 60px;
+    display: flex;
+    align-items: flex-start;
+  } */
+/* .site-information {
+    align-content: baseline;
+  }
+  
+  .content-area {
+    width: 100%;
+  }
+  
+  .widget-area {
+    width: 100%; */
+/* } */
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-start;
+          flex-direction: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+  color: #248a83; }
