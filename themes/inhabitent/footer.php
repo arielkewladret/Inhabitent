@@ -17,7 +17,7 @@
 					<div class="footer-block"> 
 						<div class="contact-container">
 							<h3>Contact Info</h3>
-							<p>
+							<!-- <p>
 							<i class="fa fa-envelope"></i>
 							<a href="mailto:info@inhabitent.com">
 							info@inhabitent.com</a>
@@ -25,7 +25,7 @@
 							<p>
 							<i class="fa fa-phone"></i>
 							<a href="tel:">778-456-7891</a> 
-							</p> 
+							</p>  -->
 							<!-- <p>social media links</p> -->
 							</div>
 							</div> 
@@ -39,8 +39,8 @@
 									10am-2pm</p>
 									<p><span class="days-of-operation">Sunday:</span> Closed</p></div>
 				<div class="footer-block">
-					<div class="text-logo-overlay">
-					<img url="./images/logos/inhabitent-logo-text-dark.svg" alt="Inhabitent Logo">
+					<!-- <div class="text-logo-overlay"> -->
+					<!-- <img url="./images/logos/inhabitent-logo-text-dark.svg" alt="Inhabitent Logo"> -->
 				</a>
 </div>
 </div>
