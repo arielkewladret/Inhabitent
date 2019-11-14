@@ -14,22 +14,6 @@
 
 // }
 
-// .site-footer {
-//   display: flex;
-//   flex-wrap: wrap;
-//   background: url('./images/dark-wood@2x.png');
-//   height: 350px;
-//   background-size: contain;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   padding: 55px 80px;
-//   color: white;
-//   /* font-family: $font__merriweather; */
-//   font-size: 15px;
-//   line-height: 1.5;
-// }
-
 // // .text-logo-overlay {
 // //   /*size: cover;*/
 // //   position: relative;
@@ -83,7 +67,60 @@
 // //   }
 // // }
 
-// ul {
-//   padding: 0;
-//   list-style: none;
-// }
+// Front page
+.fp-journal-entries {
+  display: flex;
+}
+.fp-journal-entry {
+  width: 33.333%;
+  border: 1px solid black;
+}
+
+.fp-adventures {
+  display: flex;
+  //   width: 25%;
+  //   border: 1px solid black;
+}
+
+.fp-adventures-entry {
+  width: 25%;
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  background: url('/images/dark-wood@2x.png');
+  //   height: 350px;
+  background-size: contain;
+  flex-direction: row;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   padding: 55px 80px;
+  color: white;
+  /* font-family: $font__merriweather; */
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.fp-banner {
+  position: relative;
+}
+.fp-banner-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  color: black;
+}
+
+h2 {
+  text-align: center;
+}

@@ -19,5 +19,16 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<?php
+   $args = array( 'post_type' => 'product', 'order' => 'ASC' );
+   $product_posts = get_posts( $args ); // returns an array of posts
+?>
+<?php if(count($product_posts)> 0):?>
+<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+   <?php /* Content from your array of post results goes here */ ?>
+<?php endforeach; wp_reset_postdata(); ?>
+<?php else:?> 
+<?php endif; ?>
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

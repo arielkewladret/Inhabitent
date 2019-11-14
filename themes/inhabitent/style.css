@@ -673,3 +673,56 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 /* Take out and use in variables later */
+.fp-journal-entries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.fp-journal-entry {
+  width: 33.333%;
+  border: 1px solid black; }
+
+.fp-adventures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.fp-adventures-entry {
+  width: 25%; }
+
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: url("/images/dark-wood@2x.png");
+  background-size: contain;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  /* font-family: $font__merriweather; */
+  font-size: 15px;
+  line-height: 1.5; }
+
+ul {
+  padding: 0;
+  list-style: none; }
+
+.fp-banner {
+  position: relative; }
+
+.fp-banner-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+body {
+  color: black; }
+
+h2 {
+  text-align: center; }
