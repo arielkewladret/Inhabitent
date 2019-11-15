@@ -19,6 +19,19 @@ get_header(); ?>
 				?>
 			</header>
 
+			<div class="products-container"> 
+				<h1 class="page-title">Shop Stuff</h1> 
+				<ul class="product-type-list">
+				<li><p><a href="">Do</a></p>
+				<li><p><a href="">Eat</a></p>
+				<li><p><a href="">Sleep</a></p>
+				<li><p><a href="">Wear</a></p></ul> 
+		</div> 
+
+
+
+
+
 		
 
 			<?php /* Start the Loop */ ?>

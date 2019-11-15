@@ -1,0 +1,32 @@
+.site-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  //   position: fixed;
+  //   flex-direction: flex-end;
+  width: 100%;
+  z-index: 2;
+
+  border-bottom: 1px solid #ccc;
+
+  .site-branding {
+    margin-right: auto;
+    max-width: 100px;
+  }
+
+  .mini-logo {
+    // height: 40px;
+    // width: 45px;
+    width: 100%;
+  }
+}
+
+.main-navigation {
+  clear: unset;
+  width: auto;
+  a {
+    display: inline-block;
+    padding: 1rem;
+    color: green;
+  }
+}

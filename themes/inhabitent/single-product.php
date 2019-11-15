@@ -13,7 +13,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-		<h2><?php the_field('price'); ?></h2>
+		<h2>Price: <?php the_field('price'); ?></h2>
 
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>

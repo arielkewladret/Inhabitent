@@ -64,3 +64,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'media';
 @import 'page-templates';
 @import 'journal';
+@import 'archive-product';
+@import 'front-page';
+@import 'header';
+
+body {
+  min-height: 100vh;
+}
