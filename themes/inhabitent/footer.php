@@ -29,7 +29,7 @@
 							<!-- <p>social media links</p> -->
 							</div>
 							</div> 
-							<div class="footer-block">
+							<!-- <div class="footer-block">
 								<div class="hours">
 									<h3>Business Hours</h3>
 									<p>
@@ -37,7 +37,7 @@
 									</span> 9am-5pm </p>
 									<span class="days-of-operation">Saturday:</span>
 									10am-2pm</p>
-									<p><span class="days-of-operation">Sunday:</span> Closed</p></div>
+									<p><span class="days-of-operation">Sunday:</span> Closed</p></div> -->
 				<div class="footer-block">
 					<!-- <div class="text-logo-overlay"> -->
 					<!-- <img url="./images/logos/inhabitent-logo-text-dark.svg" alt="Inhabitent Logo"> -->
