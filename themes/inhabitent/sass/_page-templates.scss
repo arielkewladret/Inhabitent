@@ -31,36 +31,36 @@
 //   align-self: baseline;
 // }
 
-// .footer-block {
-//   width: 25%;
-//   padding: 60px;
-//   display: flex;
-//   align-items: flex-start;
-// }
+.footer-block {
+  width: 25%;
+  padding: 60px;
+  display: flex;
+  align-items: flex-start;
+}
 
-// /* .site-information {
-//     align-content: baseline;
-//   }
+.site-information {
+    align-content: baseline;
+  }
 
-//   .content-area {
-//     width: 100%;
-//   }
+  .content-area {
+    width: 100%;
+  }
 
-//   .widget-area {
-//     width: 100%; */
-// /* } */
+  .widget-area {
+    width: 100%; */
+/* } */
 
-// // a {
-// //   display: flex;
-// //   flex-direction: flex-start;
-// //   justify-content: space-between;
-// //   padding: 50px;
-// //   color: #248a83;
-// //   text-decoration: none;
-// //   &:hover {
-// //     color: purple;
-// //   }
-// // }
+a {
+display: flex;
+flex-direction: flex-start;
+justify-content: space-between;
+ padding: 50px;
+color: #248a83;
+  text-decoration: none;
+  &:hover {
+    color: purple;
+}
+ }
 
 // Front page
 .fp-journal-entries {
@@ -71,16 +71,16 @@
   border: 1px solid black;
 }
 
-// .fp-adventures {
-//   display: flex;
-//   //   width: 25%;
-//   //   border: 1px solid black;
-// }
+.fp-adventures {
+  display: flex;
+  //   width: 25%;
+  //   border: 1px solid black;
+}
 
-// .fp-adventures-entry {
-//   width: 25%;
-//   z-index: 1;
-// }
+.fp-adventures-entry {
+  width: 25%;
+  z-index: 1;
+}
 
 .site-footer {
   display: flex;

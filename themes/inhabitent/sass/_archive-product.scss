@@ -17,3 +17,11 @@
     max-width: 100%;
   }
 }
+
+h2 {
+  color: green;
+}
+
+.shop-items-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+}

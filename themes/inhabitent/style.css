@@ -682,6 +682,27 @@ object {
 .footer-container {
   color: white; }
 
+.footer-block {
+  width: 25%;
+  padding: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+/* .site-information {
+    align-content: baseline;
+  }
+
+  .content-area {
+    width: 100%;
+  }
+
+  .widget-area {
+    width: 100%; */
+/* } */
 .fp-journal-entries {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -764,9 +785,6 @@ a {
     left: 0;
     position: absolute;
     margin-top: 2.25rem; }
-  .entry-title img {
-    height: auto;
-    max-width: 100%; }
 
 .entry-meta {
   position: absolute;
@@ -789,8 +807,11 @@ a {
     height: auto;
     max-width: 100%; }
 
-.banner-image img {
-  width: 100%; }
+h2 {
+  color: green; }
+
+.shop-items-grid {
+  grid-template-columns: 1fr 1fr 1fr; }
 
 .fp-adventures {
   display: grid;
@@ -804,6 +825,13 @@ a {
 .fp-adventures-entry:nth-child(2) {
   grid-column: 2/4; }
 
+.fp-adventures-entry {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 100%;
+  min-width: 100%; }
+
 .site-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -816,11 +844,14 @@ a {
           align-items: center;
   width: 100%;
   z-index: 2;
+  position: absolute;
   border-bottom: 1px solid #ccc; }
   .site-header .site-branding {
     margin-right: auto;
     max-width: 100px; }
   .site-header .mini-logo {
+    height: 40px;
+    width: 45px;
     width: 100%; }
 
 .main-navigation {
@@ -829,7 +860,24 @@ a {
   .main-navigation a {
     display: inline-block;
     padding: 1rem;
-    color: green; }
+    color: white;
+    border: none; }
+
+.wp-block-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .wp-block-image p {
+    text-align: center; }
+  .wp-block-image a {
+    position: relative; }
+  .wp-block-image .entry-title {
+    position: relative;
+    top: 20px;
+    left: 10px; }
 
 body {
   min-height: 100vh; }

@@ -6,6 +6,7 @@
   //   flex-direction: flex-end;
   width: 100%;
   z-index: 2;
+  position: absolute;
 
   border-bottom: 1px solid #ccc;
 
@@ -15,8 +16,8 @@
   }
 
   .mini-logo {
-    // height: 40px;
-    // width: 45px;
+    height: 40px;
+    width: 45px;
     width: 100%;
   }
 }
@@ -27,7 +28,8 @@
   a {
     display: inline-block;
     padding: 1rem;
-    color: green;
+    color: white;
+    border: none;
   }
 }
 
