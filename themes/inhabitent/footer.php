@@ -14,10 +14,10 @@
 					<!-- <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a> -->
 				</div> 
 				<div class="footer-container"> 
-					<div class="footer-block"> 
+					<!-- <div class="footer-block">  -->
 						<div class="contact-container">
 							<h3>Contact Info</h3>
-							<!-- <p>
+							<p>
 							<i class="fa fa-envelope"></i>
 							<a href="mailto:info@inhabitent.com">
 							info@inhabitent.com</a>
@@ -25,11 +25,11 @@
 							<p>
 							<i class="fa fa-phone"></i>
 							<a href="tel:">778-456-7891</a> 
-							</p>  -->
+							</p>  
 							<!-- <p>social media links</p> -->
 							</div>
 							</div> 
-							<!-- <div class="footer-block">
+							<div class="footer-block">
 								<div class="hours">
 									<h3>Business Hours</h3>
 									<p>
@@ -37,15 +37,13 @@
 									</span> 9am-5pm </p>
 									<span class="days-of-operation">Saturday:</span>
 									10am-2pm</p>
-									<p><span class="days-of-operation">Sunday:</span> Closed</p></div> -->
+									<p><span class="days-of-operation">Sunday:</span> Closed</p></div>
 				<div class="footer-block">
-					<!-- <div class="text-logo-overlay"> -->
-					<!-- <img url="./images/logos/inhabitent-logo-text-dark.svg" alt="Inhabitent Logo"> -->
-				</a>
+					<img url="./images/logos/inhabitent-logo-text-dark.svg" alt="Inhabitent Logo">
+				</a> 
 </div>
 </div>
-<div class="site-information">
-	<div class="container">COPYRIGHT © 2019 INHABITENT</div>
+<div class="site-information">COPYRIGHT © 2019 INHABITENT</div>
 </div>
 </footer>
 

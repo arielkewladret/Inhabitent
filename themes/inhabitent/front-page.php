@@ -9,13 +9,6 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-		<div class="fp-banner">
-			<img class="fp-banner-logo" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>"/>
-		</div>
-	
-
-
 		 
 		 <!-- <div class="fp-banner"> -->
 		<!-- if client wants to customize -->
@@ -23,6 +16,17 @@ get_header(); ?>
 	
 
 			<?php while ( have_posts() ) : the_post(); ?>
+
+			<!-- TODO :linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), -->
+				<!-- background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url(https://tent.academy.red/wp-content/uploads/2016/04/about-hero.jpg) no-repeat center bottom; 
+      background-size: cover, cover;
+      display: flex;
+      align-items: center;
+      justify-content: center; -->
+
+				<div class="fp-banner" style="background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url('<?php the_post_thumbnail_url(); ?>') no-repeat center bottom; background-size: cover, cover; display: flex; align-items: center; justify-content: center;">
+					<img class="fp-banner-logo" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>"/>
+				</div>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
@@ -102,6 +106,8 @@ $journal_posts = get_posts( $args ); // returns an array of posts
 	</section>
 <?php endif; ?>
 
+<section class="adventures-section"> 
+
 <h2> Adventures </h2> 
 
 <?php
@@ -131,10 +137,12 @@ $adventures_posts = get_posts( $args ); // returns an array of posts
 		</article>
 	<?php endforeach; wp_reset_postdata(); ?>
 	</section>
-<?php endif; ?>
+<?php endif; ?></section> 
+
+<!-- what is this??? -->
 
 <section class="product-info container">
-            <h2>Shop Stuff</h2>
+            <!-- <h2>Shop Stuff</h2> -->
             <?php
                $terms = get_terms( array(
                    'taxonomy' => 'product_type',
@@ -165,7 +173,7 @@ $adventures_posts = get_posts( $args ); // returns an array of posts
 // the_title();
 ?>
 <?php 
+
 // endforeach; wp_reset_postdata(); 
 ?>
-
 <?php get_footer(); ?>

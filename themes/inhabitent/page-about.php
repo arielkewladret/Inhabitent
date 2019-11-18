@@ -12,9 +12,9 @@ get_header(); ?>
 
 		<main id="main" class="site-main" role="main">
 
-		<!-- <?php the_title(); ?> -->
-
 			<?php while ( have_posts() ) : the_post(); ?>
+			<div class="fp-banner" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
+
 
 				<?php get_template_part( 'template-parts/content', 'about' ); ?>
 
@@ -22,6 +22,10 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<div class="about-photo">
+  <img class="cover" src="./images/about-hero.jpg" alt="man on a ridge">
+</div>
 
 	<?php
    $args = array( 'post_type' => 'product', 'order' => 'ASC' );
@@ -34,5 +38,4 @@ get_header(); ?>
 <?php else:?> 
 <?php endif; ?>
 
-<!-- <?php get_sidebar(); ?> -->
 <?php get_footer(); ?>

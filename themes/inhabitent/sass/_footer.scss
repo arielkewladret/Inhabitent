@@ -1,0 +1,82 @@
+.site-footer {
+  display: flex;
+  /*   margin-left: auto; 
+    margin-right: auto;  */
+  // width: 1000px;
+  // height: 200px;
+  // flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 1.5;
+  flex-direction: column;
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  background: url('../../images/dark-wood@2x.png');
+  background-size: contain;
+  flex-direction: row;
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.footer-logo {
+  width: 25%;
+  padding: 60px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.site-information {
+  align-content: baseline;
+}
+
+.content-area {
+  width: 100%;
+}
+
+.contact-container {
+}
+
+i {
+}
+
+.footer-block {
+}
+
+.hours {
+}
+
+//   a {
+//     color: white;
+//   }
+
+//   .social {
+//     padding: 25px;
+//     width: 10 px;
+//     padding: 0px;
+//     display: inline-block;
+//     color: white;
+//     line-height: 2;
+//     font-weight: 100;
+//   }
+
+//   .social li {
+//     white-space: nowrap;
+//     display: inline-block;
+//   }
+
+//   .social-text {
+//     display: none;
+//   }
+
+//   .fab {
+//     margin: 10px;
+//   }
+
+//   li:hover {
+//     color: #e2574c;
+
+//   } */ */

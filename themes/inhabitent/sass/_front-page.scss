@@ -9,6 +9,10 @@
   height: 500px;
   grid-template-rows: 50% 50%;
   grid-template-columns: 50% 25% 25%;
+  grid-gap: 20px 20px;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
 }
 
 .fp-adventures-entry:first-child {
@@ -21,7 +25,24 @@
 
 .fp-adventures-entry {
   overflow: hidden;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.fp-adventures-entry img {
   object-fit: cover;
   min-height: 100%;
   min-width: 100%;
+}
+
+.adventures-section {
+  margin: 50px;
+}
+
+.fp-journal-entry {
+  display: flex;
+  border: 1px grey;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 5px;
 }

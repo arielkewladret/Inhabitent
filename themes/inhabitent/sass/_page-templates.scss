@@ -5,41 +5,9 @@
 
 /* Take out and use in variables later */
 
-.footer-container {
-  //   display: flex;
-  color: white;
-}
-
-// .hero {
-
-// }
-
-// // .text-logo-overlay {
-// //   /*size: cover;*/
-// //   position: relative;
-// //   /*height: 10em;*/
-// //   display: flex;
-// //   margin-top: 118px;
-// //   justify-content: center;
-// //   z-index: 100;
-// // }
-
-// /* background: url(./images/logos/inhabitent-logo-full.svg), no-repeat; */
-// // }
-
-// .site-information {
-//   align-self: baseline;
-// }
-
-.footer-block {
-  width: 25%;
-  padding: 60px;
-  display: flex;
-  align-items: flex-start;
-}
-
 .site-information {
-  align-content: baseline;
+  // flex-position:
+  align-self: baseline;
 }
 
 .content-area {
@@ -53,7 +21,7 @@ a {
   display: flex;
   flex-direction: flex-start;
   justify-content: space-between;
-  padding: 50px;
+  // padding: 50px;
   color: #248a83;
   text-decoration: none;
   &:hover {
@@ -67,7 +35,7 @@ a {
 }
 .fp-journal-entry {
   width: 33.333%;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .fp-adventures {
@@ -79,18 +47,7 @@ a {
 
 .fp-adventures-entry {
   width: 25%;
-  z-index: 1;
-}
-
-.site-footer {
-  display: flex;
-  flex-wrap: wrap;
-  background: url('../../images/dark-wood@2x.png');
-  background-size: contain;
-  flex-direction: row;
-  color: white;
-  font-size: 15px;
-  line-height: 1.5;
+  // z-index: 1;
 }
 
 ul {
@@ -101,9 +58,9 @@ ul {
 
 .fp-banner {
   // position: relative;
-  background-image: linear-gradient(rgba(black, 0.3), rgba(black, 0.3)),
-    url('../../images/home-hero.jpg');
-  background-size: cover;
+  // background-image: linear-gradient(rgba(black, 0.3), rgba(black, 0.3)),
+  //   url('../../images/home-hero.jpg');
+  background-size: cover, cover;
   height: 100vh;
   width: 100%;
 
@@ -131,13 +88,13 @@ a {
   text-decoration: none;
 }
 
-.mini-logo {
-  // position: fixed;
-  // height: 45px;
-  // width: 40px;
-  // background: white;
-  // opacity: 0.5%;
-}
+// .mini-logo {
+//   // position: fixed;
+//   // height: 45px;
+//   // width: 40px;
+//   // background: white;
+//   // opacity: 0.5%;
+// }
 
 .product-type-list {
   display: flex;
