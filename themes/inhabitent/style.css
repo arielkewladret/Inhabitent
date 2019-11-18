@@ -692,17 +692,33 @@ object {
       -ms-flex-align: start;
           align-items: flex-start; }
 
-/* .site-information {
-    align-content: baseline;
-  }
+.site-information {
+  -ms-flex-line-pack: baseline;
+      align-content: baseline; }
 
-  .content-area {
-    width: 100%;
-  }
+.content-area {
+  width: 100%; }
 
-  .widget-area {
-    width: 100%; */
-/* } */
+.widget-area {
+  width: 100%; }
+
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-start;
+          flex-direction: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+  color: #248a83;
+  text-decoration: none; }
+  a:hover {
+    color: purple; }
+
 .fp-journal-entries {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,6 +727,15 @@ object {
 .fp-journal-entry {
   width: 33.333%;
   border: 1px solid black; }
+
+.fp-adventures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.fp-adventures-entry {
+  width: 25%;
+  z-index: 1; }
 
 .site-footer {
   display: -webkit-box;
@@ -874,10 +899,9 @@ h2 {
     text-align: center; }
   .wp-block-image a {
     position: relative; }
-  .wp-block-image .entry-title {
+  .wp-block-image .entry-title-about {
     position: relative;
-    top: 20px;
-    left: 10px; }
+    color: white; }
 
 body {
   min-height: 100vh; }

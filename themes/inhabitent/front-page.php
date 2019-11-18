@@ -15,26 +15,7 @@ get_header(); ?>
 		</div>
 	
 
-<!-- <section class="product-info container">
-            <h2>Shop Stuff</h2>
-            <?php
-               $terms = get_terms( array(
-                   'taxonomy' => 'product_type',
-                   'hide_empty' => 0,
-               ) );
-               if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
-            ?>
-               <div class="product-type-blocks">
-                  <?php foreach ( $terms as $term ) : ?>
-                     <div class="product-type-block-wrapper">
-                        <img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
-                        <p><?php echo $term->description; ?></p>
-                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
-                     </div>
-                  <?php endforeach; ?>
-               </div>
-            <?php endif; ?>
-		 </section> -->
+
 		 
 		 <!-- <div class="fp-banner"> -->
 		<!-- if client wants to customize -->
@@ -50,7 +31,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php
+	<!-- <?php
 if(is_front_page()){  ?>
 	
 <?php }
@@ -60,10 +41,34 @@ if(is_page('About')){
         echo get_the_title();
     }
 }
-?>
+?> -->
 
 
-	<h2> Shop </h2> 
+	<h2> Shop Stuff</h2> 
+
+	
+
+	<section>
+   <!-- double check taxonomy name -->
+   <!-- may be "taxonomy" -->
+   <!-- for each loop not displaying -->
+   <?php
+               $terms = get_terms( array(
+                   'taxonomy' => 'product_type',
+                   'hide_empty' => 0,
+               ) );
+               if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+            ?>
+            <?php foreach ($product_types as $value) : setup_postdata($value); ?>
+            <div>  
+                <img alt="Product Icons" src=<?php echo get_template_directory_uri() . './images/product-type-icons/' . $value->slug . '.svg' ?>>
+                 <p><?php echo $value->description ?></p>
+                 <a href=<?php echo get_term_link($value) ?>><span><?php echo $value->name ?> stuff</span></a>
+            </div>
+            <?php endforeach;
+        wp_reset_postdata(); ?>
+          <?php endif; ?>  
+    </section>
 
 
 
