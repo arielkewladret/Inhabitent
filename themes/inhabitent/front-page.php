@@ -94,13 +94,16 @@ $journal_posts = get_posts( $args ); // returns an array of posts
 		
 		<article class="fp-journal-entry">
 
-			<?php
-			if ( has_post_thumbnail() ) {
-				the_post_thumbnail('large');
-			} 
-			?>
+		    <div class="journal-entry-container">
+				<?php
+				if ( has_post_thumbnail() ) {
+					the_post_thumbnail('large');
+				} 
+				?>
+			</div>
 
 			<h2>
+				<?php the_date('l, M Y'); ?>/<?php $comments = get_comments_number(); if ($comments) { echo $comments; } else { echo '0';} ?> Comments
 				<a href="<?php echo get_the_permalink(); ?>">
 				<?php the_title();?></a>
 			</h2>
@@ -115,7 +118,7 @@ $journal_posts = get_posts( $args ); // returns an array of posts
 
 <section class="adventures-section"> 
 
-<h2> Adventures </h2> 
+<h2> Latest Adventures </h2> 
 
 <?php
 $args = array( 'post_type' => 'adventures', 'order' => 'ASC', 'posts_per_page' => 4);

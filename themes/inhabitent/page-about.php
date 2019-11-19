@@ -24,7 +24,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 	<div class="about-photo">
-  <img class="cover" src="./images/about-hero.jpg" alt="man on a ridge">
+  <img class="cover" src="./images/about-hero.jpg" alt="">
 </div>
 
 	<?php

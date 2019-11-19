@@ -32,18 +32,19 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div>
 				
-				<!-- .site-branding -->
-
-			
-
-
 			
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
+					<div class="search-toggle" aria-expanded="false"><?php echo esc_html( '' ); ?></div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
-				<?php get_search_form(); ?> 
-			</header><!-- #masthead -->
+				</nav>
+			
+				<form role="search" method="get" id="show" action="<?php get_search_form( '/' ); ?>"> 
+  
+
+
+
+
+</header>
 
 			<div id="content" class="site-content"> 
 

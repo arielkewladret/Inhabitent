@@ -1,58 +1,43 @@
-// .banner-image {
-//   img {
-//     width: 100%;
-//   }
-// }
-
 .wp-block-image {
   display: flex;
   justify-content: flex-end;
 }
 
-// p {
-// text-align: center;
-// color: green;
-//   align-items: center;
-// }
-
-// img {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-// }
-
-// h1 {
-//   color: green;
-// }
-
-//   a {
-//     position: relative;
-//   }
-
-//   .entry-title-about {
-//     position: relative;
-//     // top: 20px;
-//     // left: 10px;
-//     color: white;
-//   }
-// }
-
-.about-photo {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  // background-image: url('../../images/home-hero.jpg');
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  padding: 20px;
+  font-family: 'Novecento Sans Web';
 }
 
-// img {
-//   object-fit: cover;
-//   width: 100%;
-//   height: 100%;
-//   background-image: url('../../images/home-hero.jpg');
+// p {
+//   color: black;
 // }
 
-// .container {
-//   background: grey;
-//   width: 50%;
-//   height: 50vw;
-// }
+strong {
+  color: #2f1339;
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Novecento Sans Web';
+  text-align: center;
+  align-items: center;
+
+  p {
+    color: black;
+  }
+}
+
+.about-photo {
+  // object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4));
+  // background-size: cover;
+}
+
+.container {
+  width: 50%;
+  height: 100px;
+  height: 50vw;
+}

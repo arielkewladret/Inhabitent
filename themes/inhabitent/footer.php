@@ -39,7 +39,7 @@
 									10am-2pm</p>
 									<p><span class="days-of-operation">Sunday:</span> Closed</p></div>
 				<div class="footer-block">
-					<img url="./images/logos/inhabitent-logo-text-dark.svg" alt="Inhabitent Logo">
+					<img url="../images/logos/inhabitent-logo-text-dark.svg" alt="">
 				</a> 
 </div>
 </div>
