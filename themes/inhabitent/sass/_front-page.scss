@@ -1,8 +1,30 @@
-// .banner-image {
-//   img {
-//     width: 100%;
-//   }
-// }
+.banner-image {
+  img {
+    width: 100%;
+  }
+}
+
+.fp-terms {
+  display: flex;
+  max-width: 1120px;
+  margin: auto;
+}
+
+.fp-term {
+  width: 25%;
+  border: 1px solid #ddd;
+  margin: 5px;
+  text-align: center;
+  box-shadow: 1px solid #ddd;
+
+  img {
+    max-width: 64px;
+  }
+
+  &-link {
+    display: block;
+  }
+}
 
 .fp-adventures {
   display: grid;
@@ -41,8 +63,47 @@
 
 .fp-journal-entry {
   display: flex;
-  border: 1px grey;
+  border: 1px solid #e1e1e1;
   justify-content: space-between;
   flex-direction: column;
   padding: 5px;
+  position: relative;
+  // width: 350px;
+}
+
+.adventures-button-more {
+  position: relative;
+  // bottom: 0.5em;
+  // left: 0.75em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #248a83;
+  padding: 1rem 1.5rem;
+  line-height: 1;
+  border: none;
+  border-radius: 0;
+  color: white;
+  box-shadow: none;
+  text-shadow: none;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 14.4px;
+  text-transform: uppercase;
+  &:hover {
+    background: #19625d;
+    outline: 0;
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-top: 1em;
+  color: #000000;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 2em;
 }

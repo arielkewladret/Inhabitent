@@ -48,11 +48,11 @@ if(is_page('About')){
 ?> -->
 
 
+<section>
+
 	<h2> Shop Stuff</h2> 
 
 	
-
-	<section>
    <!-- double check taxonomy name -->
    <!-- may be "taxonomy" -->
    <!-- for each loop not displaying -->
@@ -61,17 +61,23 @@ if(is_page('About')){
                    'taxonomy' => 'product_type',
                    'hide_empty' => 0,
                ) );
-               if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+			//    print_r($terms);
+			   if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
             ?>
-            <?php foreach ($product_types as $value) : setup_postdata($value); ?>
-            <div>  
-                <img alt="Product Icons" src=<?php echo get_template_directory_uri() . './images/product-type-icons/' . $value->slug . '.svg' ?>>
-                 <p><?php echo $value->description ?></p>
-                 <a href=<?php echo get_term_link($value) ?>><span><?php echo $value->name ?> stuff</span></a>
-            </div>
-            <?php endforeach;
-        wp_reset_postdata(); ?>
-          <?php endif; ?>  
+
+			<div class="fp-terms">
+				<?php foreach ($terms as $value) : setup_postdata($value); ?>
+				<div class="fp-term">  
+					<img alt="Product Icons" src=<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $value->slug . '.svg' ?>>
+					<p><?php echo $value->description; ?></p>
+					<a class="fp-term-link" href=<?php echo get_term_link($value) ?>><span><?php echo $value->name ?> stuff</span></a>
+				</div>
+				<?php endforeach;
+				wp_reset_postdata(); ?>
+			</div><!-- .fp-terms -->
+		  <?php 
+		endif; 
+		?>  
     </section>
 
 
@@ -106,6 +112,7 @@ $journal_posts = get_posts( $args ); // returns an array of posts
 	</section>
 <?php endif; ?>
 
+
 <section class="adventures-section"> 
 
 <h2> Adventures </h2> 
@@ -139,41 +146,22 @@ $adventures_posts = get_posts( $args ); // returns an array of posts
 	</section>
 <?php endif; ?></section> 
 
-<!-- what is this??? -->
 
-<section class="product-info container">
-            <!-- <h2>Shop Stuff</h2> -->
-            <?php
-               $terms = get_terms( array(
-                   'taxonomy' => 'product_type',
-                   'hide_empty' => 0,
-               ) );
-               if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
-            ?>
-               <div class="product-type-blocks">
-                  <?php foreach ( $terms as $term ) : ?>
-                     <div class="product-type-block-wrapper">
-                        <img src="<?php echo get_template_directory_uri() . '/images/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
-                        <p><?php echo $term->description; ?></p>
-                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
-                     </div>
-                  <?php endforeach; ?>
-               </div>
-            <?php endif; ?>
-		 </section>
+		 <div class="adventure-button-container">
+                        <button class="adventures-button-more">More Adventures</button>
+                    </div> 
 		 
-	
 
 
 
 <?php 
-// foreach ( $posts as $post ) : setup_postdata( $post ); 
+foreach ( $posts as $post ) : setup_postdata( $post ); 
 ?>
 <?php 
-// the_title();
+the_title();
 ?>
 <?php 
 
-// endforeach; wp_reset_postdata(); 
+endforeach; wp_reset_postdata(); 
 ?>
 <?php get_footer(); ?>
