@@ -1,4 +1,4 @@
-Description: Custom Wordpress theme for a 'Hipster' Camping Supplies Store
+Description: Custom Wordpress multi-page theme for a 'Hipster' Camping Supplies Store
 
 Languages Applied: PHP, HTML, CSS/SASS, JavaScript
 
