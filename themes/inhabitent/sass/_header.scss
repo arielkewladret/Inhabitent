@@ -1,94 +1,44 @@
-.site-header {
+.site-header-navigation {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  //   position: fixed;
-  //   flex-direction: flex-end;
-  width: 100%;
-  z-index: 2;
-  position: absolute;
-
-  // border-bottom: 1px solid #ccc;
-
-  .search-field {
-    padding: 0px;
-  }
-
-  .site-branding {
-    margin-right: auto;
-    max-width: 100px;
-  }
-
-  .mini-logo {
-    height: 33px;
-    width: 50px;
-    // width: 100%;
-  }
+  justify-content: space-between;
 }
 
-.main-navigation {
-  clear: unset;
-  width: auto;
-  a {
-    display: inline-block;
-    padding: 1rem;
-    color: white;
-    border: none;
+.hfeed {
+  .site-header {
+    width: 100vw;
+    position: fixed;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    .site-branding {
+      margin-left: 20px;
+      a {
+        img {
+          height: 70px;
+          width: 70px;
+        }
+      }
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-right: 30px;
+      ul {
+        display: flex;
+
+        li {
+          padding-right: 10px;
+          list-style: none;
+          a {
+            color: $color__text-screen;
+            text-decoration: none;
+            &:visited {
+              color: $color__text-screen;
+            }
+          }
+        }
+      }
+    }
   }
-}
-
-.show {
-  translate: translateX(0);
-  transition: all 0.3s ease;
-}
-
-.search-toggle {
-  translate: translateX(0);
-  cursor: pointer;
-}
-
-label {
-  position: relative;
-  display: inline-block;
-  padding: 0px;
-  // transition: all 1s ease;
-  border-radius: 20px;
-  // box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-
-  &::after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: 80%;
-    transition: all 1s ease 0.5s;
-  }
-  input {
-    transition: width 1s ease, opacity 0.5s ease 0.5s;
-    opacity: 1;
-    width: 180px;
-    height: 25px;
-    border: 0;
-    outline: none;
-  }
-
-  input {
-    width: 28px;
-    height: 25px;
-    opacity: 0;
-    cursor: pointer;
-    transition: opacity 0.5s ease, width 1s ease;
-    -webkit-appearance: none;
-  }
-}
-.search-submit {
-  background: none;
-  color: white;
-  border-radius: 20px;
-  padding: 10px;
-  font-weight: 5;
-}
-
-a {
-  font-family: 'Novecento Sans Web', sans-serif;
-  font-size: 17px;
 }

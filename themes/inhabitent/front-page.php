@@ -9,8 +9,12 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
+		<div class="site-branding">
+					<a href="/inhabitent"> 
+					<img class="mini-logo" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg'; ?>"/></a> 
 		 
-		 <!-- <div class="fp-banner"> -->
+		<!-- <div class="fp-banner"> -->
 		<!-- if client wants to customize -->
 	
 	
@@ -49,7 +53,7 @@ if(is_page('About')){
 
 
 <section>
-
+	<div class="container">
 	<h2> Shop Stuff</h2> 
 
 	
@@ -78,6 +82,7 @@ if(is_page('About')){
 		  <?php 
 		endif; 
 		?>  
+	</div>
     </section>
 
 

@@ -32,22 +32,61 @@ content-area .sticky {
   margin: 0 0 $base__space-unit;
 }
 
-/* Asides */
+// /* Asides */
 
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none;
-}
-
-/* Comments */
-
-.comment-content a {
-  word-wrap: break-word;
-}
-.bypostauthor {
-  display: block;
-}
-
-// .site-content {
-//   display: flex;
+// .blog .format-aside .entry-title,
+// .archive .format-aside .entry-title {
+//   display: none;
 // }
+
+// /* Comments */
+
+// .comment-content a {
+//   word-wrap: break-word;
+// }
+// .bypostauthor {
+//   display: block;
+// }
+
+// // .site-content {
+// //   display: flex;
+// // }
+
+main {
+  .fp-banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 207vh;
+  }
+  article {
+    text-align: center;
+  }
+}
+
+strong {
+  color: #2f1339;
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Novecento Sans Web';
+  text-align: center;
+  align-items: center;
+  letter-spacing: 2px;
+
+  p {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+}
+
+// **** why isn't this working
+
+.fp-banner {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4));
+  // background-size: cover;
+}

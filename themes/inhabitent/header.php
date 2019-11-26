@@ -24,27 +24,25 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div class="site-branding">
-					<a href="/inhabitent"> 
-					<img class="mini-logo" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg'; ?>"/></a> 
+				<div class="container">
+					<div class="site-header-navigation">
+						<div class="site-branding">
+							<a href="/inhabitent"> 
+							<img class="mini-logo" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg'; ?>"/></a> 
 
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url('/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url('/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+						</div>
+						
+					
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+							<div class="search-toggle" aria-expanded="false"><?php echo esc_html( '' ); ?></div>
+							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+							<?php get_search_form(); ?>
+						</nav>
+					</div>
 				</div>
-				
-			
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<div class="search-toggle" aria-expanded="false"><?php echo esc_html( '' ); ?></div>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav>
-			
-				<form role="search" method="get" id="show" action="<?php get_search_form( '/' ); ?>"> 
-  
-
-
-
-
-</header>
+			</header>
 
 			<div id="content" class="site-content"> 
 

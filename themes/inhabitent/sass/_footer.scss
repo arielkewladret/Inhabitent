@@ -2,7 +2,7 @@
   justify-content: space-between;
   line-height: 1.5;
   flex-direction: column;
-  // height: 350px;
+  //   height: 350px;
   display: flex;
   flex-wrap: wrap;
   background: url('../../images/dark-wood@2x.png');
@@ -28,9 +28,9 @@
   align-items: flex-start;
 }
 
-.site-information {
-  align-content: baseline;
-}
+// .site-information {
+//   align-content: baseline;
+// }
 
 .content-area {
   width: 100%;
@@ -52,9 +52,9 @@
 i {
 }
 
-h3 {
-  font-size: 1em;
-}
+// h3 {
+//   font-size: 1em;
+// }
 
 .site-information {
   padding: 60px;
@@ -72,20 +72,20 @@ a {
   color: white;
 }
 
-//   .social {
-//     padding: 25px;
-//     width: 10 px;
-//     padding: 0px;
-//     display: inline-block;
-//     color: white;
-//     line-height: 2;
-//     font-weight: 100;
-//   }
+.social {
+  padding: 25px;
+  width: 10 px;
+  padding: 0px;
+  display: inline-block;
+  color: white;
+  line-height: 2;
+  font-weight: 100;
+}
 
-//   .social li {
-//     white-space: nowrap;
-//     display: inline-block;
-//   }
+.social li {
+  white-space: nowrap;
+  display: inline-block;
+}
 
 .social-text {
   display: none;
@@ -95,12 +95,10 @@ a {
   margin: 10px;
 }
 
-//   li:hover {
-//     color: #e2574c;
-
-//   } */ */
-
-// .container {
+li:hover {
+  color: #e2574c;
+}
+// */ */ .container {
 //   font-family: Novecento Sans Web, sans-serif;
 //   text-align: center;
 //   text-transform: uppercase;
