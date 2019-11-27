@@ -1,8 +1,5 @@
-// .blog {
-//   .entry-header {
-//     position: relative;
-//   }
-// }
+.blog {
+}
 
 // .entry-title {
 //   position: absolute;
@@ -18,10 +15,10 @@
 //     position: absolute;
 //     margin-top: 2.25rem;
 //   }
-//   // img {
-//   //   height: auto;
-//   //   max-width: 100%;
-//   // }
+// img {
+//   height: auto;
+//   max-width: 100%;
+// }
 // }
 // .entry-meta {
 //   position: absolute;
@@ -29,3 +26,7 @@
 //   right: 0;
 //   color: white;
 // }
+
+.entry-content p {
+  color: black;
+}

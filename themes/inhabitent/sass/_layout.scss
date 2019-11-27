@@ -98,7 +98,11 @@
     align-items: center;
     height: 100vh;
   }
-  .entry-title-about {
+  h1 .entry-title-about {
     color: white;
+    text-align: center;
+    font-size: 3em;
+    padding: 20px;
+    font-family: 'Novecento Sans Web', sans-serif;
   }
 }

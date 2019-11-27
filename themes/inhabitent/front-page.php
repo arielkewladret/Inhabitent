@@ -105,13 +105,12 @@ $journal_posts = get_posts( $args ); // returns an array of posts
 				?>
 			</div>
 
-			<h2>
-				<?php the_date('l, M Y'); ?>/<?php $comments = get_comments_number(); if ($comments) { echo $comments; } else { echo '0';} ?> Comments
-				<a href="<?php echo get_the_permalink(); ?>">
-				<?php the_title();?></a>
-			</h2>
-
-			<a href="<?php echo get_the_permalink(); ?>">Read Entry</a>
+			<div class="fp-journal-info">
+				<span class="fp-journal-info-date">
+				<?php the_date('l, M Y'); ?>/<?php $comments = get_comments_number(); if ($comments) { echo $comments; } else { echo '0';} ?> Comments</span>
+				<a class="fp-journal-info-title" href="<?php echo get_the_permalink(); ?>"><?php the_title();?></a>
+				<a class="fp-journal-info-btn" href="<?php echo get_the_permalink(); ?>">Read Entry</a>
+			</div>
 		
 		</article>
 	<?php endforeach; wp_reset_postdata(); ?>
@@ -142,7 +141,7 @@ $adventures_posts = get_posts( $args ); // returns an array of posts
 
 			<h2>
 				<a href="<?php echo get_the_permalink(); ?>">
-				<!-- <?php the_title();?></a> -->
+				<?php the_title();?></a>
 			</h2>
 
 			<a href="<?php echo get_the_permalink(); ?>">Read More</a>

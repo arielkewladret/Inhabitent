@@ -9,7 +9,7 @@
   background-size: contain;
   flex-direction: row;
   color: white;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -19,6 +19,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  // color: #d99054;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  color: #d99054;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: $font__body, sans-serif;
 }
 
 .footer-logo {
@@ -36,10 +45,11 @@
   width: 100%;
 }
 
-.contact-container {
+.contact-container .days-of-operation {
   padding: 1.9rem;
   color: white;
   font-size: 18px;
+  // font-weight: bold;
   a {
     color: white;
   }
@@ -49,12 +59,22 @@
   margin-left: 20%;
   margin-bottom: 9%;
 }
-i {
+span.days-of-operation {
+  font-weight: bold;
 }
 
-// h3 {
-//   font-size: 1em;
-// }
+.fab ::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400px;
+  // content: '\f082';
+}
+
+.social-links {
+  font-size: 1.25rem;
+  padding: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
 
 .site-information {
   padding: 60px;
@@ -64,8 +84,7 @@ i {
 }
 
 .hours {
-  color: #d99045;
-  text-transform: uppercase;
+  color: white;
 }
 
 a {
@@ -99,7 +118,6 @@ li:hover {
   color: #e2574c;
 }
 // */ */ .container {
-//   font-family: Novecento Sans Web, sans-serif;
 //   text-align: center;
 //   text-transform: uppercase;
 //   color: white;

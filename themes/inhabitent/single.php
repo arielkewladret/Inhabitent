@@ -26,6 +26,26 @@ get_header(); ?>
 					comments_template();
 				endif;
 			?>
+
+<section class="journal-container">
+
+<div id="secondary" class="widget-area">
+	<?php get_sidebar(); ?>
+</div> 
+
+	<div class="journal-section">   
+
+		<?php /* Start the Loop */ ?>
+		<?php while (have_posts()) : the_post(); ?>
+		
+		<div class="journal-single-post">
+			<?php get_template_part('template-parts/content', 'blog'); ?>
+
+        <div class="social-media-button">
+                            <button class="social-button"><i class="fab fa-facebook"></i>Like</button>
+                            <button class="social-button"><i class="fab fa-twitter"></i>Tweet</button>
+                            <button class="social-button"><i class="fab fa-pinterest"></i>Pin</button>
+                        </div>
 	
 		</main><!-- #main -->
 	</div><!-- #primary -->

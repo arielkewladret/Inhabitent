@@ -66,11 +66,54 @@
 .fp-journal-entry {
   display: flex;
   border: 1px solid #e1e1e1;
+  margin: 10px;
   justify-content: space-between;
   flex-direction: column;
   padding: 5px;
   position: relative;
-  // width: 350px;
+  width: 350px;
+  height: 400px;
+  line-height: $base__space-unit;
+}
+
+.fp-journal-info {
+  &-date {
+    color: $color__text-main;
+    font-size: 0.75rem;
+    font-family: $font__main;
+    margin-bottom: 0.75rem;
+  }
+  &-title {
+    color: $color__font-green;
+    font-family: $font__body, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+    font-weight: 800;
+
+    &:visited {
+      color: $color__link-hover;
+    }
+  }
+  &-btn {
+    display: inline-block;
+    color: $color__text-black;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    // width: 100px;
+
+    &:visited {
+      color: inherit;
+
+      &:hover {
+        background-color: $color__font-green;
+        color: white;
+      }
+    }
+  } // btn
 }
 
 .adventures-button-more {
@@ -97,12 +140,43 @@
   }
 }
 
-h2 {
+.fp-term-link {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  background-color: #248a83;
+  padding: 1rem 1.5rem;
+  line-height: 1;
+  border: none;
+  border-radius: 0;
+  color: white;
+  box-shadow: none;
+  text-shadow: none;
+  font-family: 'Novecento Sans Web';
+  font-size: 14.4px;
+  text-transform: uppercase;
+  margin: 20px;
+
+  &:hover {
+    background: #19625d;
+    outline: 0;
+  }
+}
+
+// headers
+
+h2 {
   margin-top: 1em;
-  color: #000000;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 2em;
+  color: #2f1339;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Novecento Sans Web';
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 h3 {

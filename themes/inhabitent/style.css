@@ -235,21 +235,32 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: black;
   font-family: "Merriweather Web";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+h1,
+h2,
+h4,
+h5,
+h6 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  padding: 20px;
+  font-family: "Novecento Sans Web", sans-serif; }
 
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -269,16 +280,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -406,11 +422,11 @@ textarea {
   width: 100%; }
 
 a {
-  color: royalblue; }
+  color: #fff; }
   a:visited {
-    color: purple; }
+    color: #fff9c0; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #fff9c0; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -423,8 +439,23 @@ a {
 .search-input.show {
   display: inline-block;
   width: 100px;
-  cursor: text;
-  font-family: "Novecento Sans Web"; }
+  opacity: 1; }
+
+.single ul {
+  color: #21759b;
+  text-shadow: none; }
+
+.archive ul {
+  color: #21759b;
+  text-shadow: none; }
+
+.blog ul {
+  color: #21759b;
+  text-shadow: none; }
+
+.error404 ul a {
+  text-shadow: none;
+  color: #21759b; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -561,6 +592,66 @@ strong {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)); }
 
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+/* Captions */
+.wp-caption {
+  margin-bottom: 1.5rem;
+  max-width: 100%; }
+  .wp-caption img[class*='wp-image-'] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .wp-caption .wp-caption-text {
+    margin: 0.8075rem 0; }
+
+.wp-caption-text {
+  text-align: center; }
+
+/* Galleries*/
+.gallery {
+  margin-bottom: 1.5rem; }
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+.gallery-caption {
+  display: block; }
+
 .container {
   max-width: 1120px;
   width: 75%;
@@ -577,6 +668,9 @@ strong {
 .entry-summary {
   margin: 5.5rem 0 0; }
 
+.widget-area {
+  width: 100%; }
+
 a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -591,14 +685,17 @@ a {
   color: #248a83;
   text-decoration: none; }
   a:hover {
-    color: purple; }
+    color: #fff9c0; }
 
-.fp-journal-entries {
+.fp-journal-entries-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .fp-journal-entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 33.333%;
   border: 1px solid black; }
 
@@ -639,9 +736,6 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-/*
- * Journal
- */
 .blog {
   text-align: left; }
   .blog .site-content {
@@ -653,19 +747,22 @@ a {
       position: absolute;
       top: 0;
       left: 0;
-      background: green;
+      background: #248a83;
       color: white; }
     .blog .entry-header .entry-meta {
       position: absolute;
       bottom: 10px;
       right: 0;
-      background: green;
+      background: #248a83;
       color: white; }
     .blog .entry-header img {
       -o-object-fit: cover;
          object-fit: cover;
       width: 100%;
       height: 100%; }
+
+.entry-content p {
+  color: black; }
 
 .shop-items-grid {
   grid-template-columns: 1fr 1fr 1fr; }
@@ -727,6 +824,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   border: 1px solid #e1e1e1;
+  margin: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -735,7 +833,40 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 5px;
-  position: relative; }
+  position: relative;
+  width: 350px;
+  height: 400px;
+  line-height: 1.5rem; }
+
+.fp-journal-info-date {
+  color: #404040;
+  font-size: 0.75rem;
+  font-family: "Merriweather Web";
+  margin-bottom: 0.75rem; }
+
+.fp-journal-info-title {
+  color: #248a83;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 0.75rem;
+  font-weight: 800; }
+  .fp-journal-info-title:visited {
+    color: midnightblue; }
+
+.fp-journal-info-btn {
+  display: inline-block;
+  color: black;
+  border: 1px solid black;
+  padding: 1rem;
+  margin-bottom: 0.75rem; }
+  .fp-journal-info-btn:visited {
+    color: inherit; }
+    .fp-journal-info-btn:visited:hover {
+      background-color: #248a83;
+      color: white; }
 
 .adventures-button-more {
   position: relative;
@@ -759,12 +890,39 @@ a {
     background: #19625d;
     outline: 0; }
 
-h2 {
+.fp-term-link {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  background-color: #248a83;
+  padding: 1rem 1.5rem;
+  line-height: 1;
+  border: none;
+  border-radius: 0;
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  font-family: 'Novecento Sans Web';
+  font-size: 14.4px;
+  text-transform: uppercase;
+  margin: 20px; }
+  .fp-term-link:hover {
+    background: #19625d;
+    outline: 0; }
+
+h2 {
   margin-top: 1em;
-  color: #000000;
-  font-weight: bold;
-  font-size: 2em; }
+  font-weight: 400;
+  font-size: 2em;
+  color: #2f1339;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Novecento Sans Web';
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 h3 {
   font-weight: bold;
@@ -837,6 +995,13 @@ h3 {
 .page-id-43 .mini-logo--green {
   display: none; }
 
+.entry-title-about h1 .page-template-default {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  padding: 20px;
+  font-family: 'Novecento Sans Web', sans-serif; }
+
 header {
   color: white; }
 
@@ -859,7 +1024,6 @@ header {
   -ms-flex-direction: row;
       flex-direction: row;
   color: white;
-  text-transform: uppercase;
   font-size: 15px;
   line-height: 1.5; }
 
@@ -876,7 +1040,14 @@ header {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  margin-bottom: 0.75rem; }
+
+h3 {
+  color: #d99054;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", sans-serif; }
 
 .footer-logo {
   width: 25%;
@@ -891,17 +1062,30 @@ header {
 .content-area {
   width: 100%; }
 
-.contact-container {
+.contact-container .days-of-operation {
   padding: 1.9rem;
   color: white;
   font-size: 18px; }
-  .contact-container a {
+  .contact-container .days-of-operation a {
     color: white; }
 
 .text-logo {
   width: 20%;
   margin-left: 20%;
   margin-bottom: 9%; }
+
+span.days-of-operation {
+  font-weight: bold; }
+
+.fab ::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400px; }
+
+.social-links {
+  font-size: 1.25rem;
+  padding: 0px;
+  margin-left: 0px;
+  padding-left: 0px; }
 
 .site-information {
   padding: 60px; }
@@ -913,8 +1097,7 @@ header {
           flex-direction: row; }
 
 .hours {
-  color: #d99045;
-  text-transform: uppercase; }
+  color: white; }
 
 a {
   color: white; }
@@ -982,8 +1165,12 @@ html {
           align-items: center;
   height: 100vh; }
 
-.page-template-default .entry-title-about {
-  color: white; }
+.page-template-default h1 .entry-title-about {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  padding: 20px;
+  font-family: 'Novecento Sans Web', sans-serif; }
 
 body {
   min-height: 100vh; }

@@ -26,9 +26,9 @@
 //   // align-self: baseline;
 // }
 
-// .widget-area {
-//   width: 100%;
-// }
+.widget-area {
+  width: 100%;
+}
 
 a {
   display: flex;
@@ -38,15 +38,16 @@ a {
   color: #248a83;
   text-decoration: none;
   &:hover {
-    color: purple;
+    color: #fff9c0;
   }
 }
 
 // Front page
-.fp-journal-entries {
+.fp-journal-entries-row {
   display: flex;
 }
 .fp-journal-entry {
+  display: flex;
   width: 33.333%;
   border: 1px solid black;
 }
@@ -94,9 +95,8 @@ a {
   flex-wrap: wrap;
 }
 
-/*
- * Journal
- */
+// journal templates
+
 .blog {
   text-align: left;
   .site-content {
@@ -109,14 +109,14 @@ a {
       position: absolute;
       top: 0;
       left: 0;
-      background: green;
+      background: $color__font-green;
       color: white;
     }
     .entry-meta {
       position: absolute;
       bottom: 10px;
       right: 0;
-      background: green;
+      background: $color__font-green;
       color: white;
     }
     img {

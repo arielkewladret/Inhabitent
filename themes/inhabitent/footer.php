@@ -26,7 +26,12 @@
 							<i class="fa fa-phone"></i>
 							<a href="tel:">778-456-7891</a> 
 							</p>  
-							<!-- <p>social media links</p> -->
+							<span class="social-links">
+							<p><i class="fab fa-facebook-square"></i>		
+							<i class="fab fa-twitter-square"></i>	
+							<i class="fab fa-google-plus-square"></i>							
+							</p>
+</span>
 							</div>
 							</div> 
 							<div class="footer-block">
@@ -38,6 +43,10 @@
 									<span class="days-of-operation">Saturday:</span>
 									10am-2pm</p>
 									<p><span class="days-of-operation">Sunday:</span> Closed</p></div>
+									
+
+
+
 				<div class="footer-block">
 					<img url="../images/logos/inhabitent-logo-text-dark.svg" alt="">
 				</a> 
