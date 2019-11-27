@@ -385,6 +385,25 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+a {
+  color: royalblue; }
+  a:visited {
+    color: purple; }
+  a:hover, a:focus, a:active {
+    color: midnightblue; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+.search-input {
+  width: 0px;
+  display: none; }
+
+.search-input.show {
+  display: inline-block;
+  width: 100px; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -454,9 +473,6 @@ textarea {
     max-width: 100%; }
 
 /* Search widget. */
-.widget_search .search-submit {
-  display: none; }
-
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -538,6 +554,68 @@ strong {
 .entry-content,
 .entry-summary {
   margin: 5.5rem 0 0; }
+
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-start;
+          flex-direction: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #248a83;
+  text-decoration: none; }
+  a:hover {
+    color: purple; }
+
+.fp-journal-entries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.fp-journal-entry {
+  width: 33.333%;
+  border: 1px solid black; }
+
+.fp-adventures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.fp-adventures-entry {
+  width: 25%; }
+
+ul {
+  padding: 0;
+  float: right; }
+
+.fp-banner {
+  background-size: cover, cover;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: top center; }
+
+a {
+  text-decoration: none; }
+
+.product-type-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 /*
  * Journal

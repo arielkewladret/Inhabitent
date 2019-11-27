@@ -92,7 +92,7 @@ $journal_posts = get_posts( $args ); // returns an array of posts
 ?>
 <?php if( have_posts() ):?>
 
-	<section class="fp-journal-entries">
+	<section class="fp-journal-entries-row">
 	<?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 		
 		<article class="fp-journal-entry">

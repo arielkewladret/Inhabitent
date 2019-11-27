@@ -29,53 +29,54 @@
 // .widget-area {
 //   width: 100%;
 // }
-// a {
-//   display: flex;
-//   flex-direction: flex-start;
-//   justify-content: space-between;
-//   // padding: 50px;
-//   color: #248a83;
-//   text-decoration: none;
-//   &:hover {
-//     color: purple;
-//   }
-// }
 
-// // Front page
-// .fp-journal-entries {
-//   display: flex;
-// }
-// .fp-journal-entry {
-//   width: 33.333%;
-//   // border: 1px solid black;
-// }
+a {
+  display: flex;
+  flex-direction: flex-start;
+  justify-content: space-between;
+  // padding: 50px;
+  color: #248a83;
+  text-decoration: none;
+  &:hover {
+    color: purple;
+  }
+}
 
-// .fp-adventures {
-//   display: flex;
-// }
-// //   width: 25%;
-// //   border: 1px solid black;
-// // }
+// Front page
+.fp-journal-entries {
+  display: flex;
+}
+.fp-journal-entry {
+  width: 33.333%;
+  border: 1px solid black;
+}
 
-// .fp-adventures-entry {
+.fp-adventures {
+  display: flex;
+}
 //   width: 25%;
-//   // z-index: 1;
+//   border: 1px solid black;
 // }
 
-// ul {
-//   padding: 0;
-//   float: right;
-// }
+.fp-adventures-entry {
+  width: 25%;
+  // z-index: 1;
+}
 
-// .fp-banner {
-//   background-size: cover, cover;
-//   height: 100vh;
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-position: top center;
-// }
+ul {
+  padding: 0;
+  float: right;
+}
+
+.fp-banner {
+  background-size: cover, cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: top center;
+}
 // .fp-banner-logo {
 // }
 
@@ -84,14 +85,14 @@
 //   color: black;
 // }
 
-// a {
-//   text-decoration: none;
-// }
+a {
+  text-decoration: none;
+}
 
-// .product-type-list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+.product-type-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*
  * Journal

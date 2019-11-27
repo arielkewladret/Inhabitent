@@ -4,25 +4,25 @@
 
 // /* Links */
 
-// a {
-//   color: $color__link;
+a {
+  color: $color__link;
 
-//   &:visited {
-//     color: $color__link-visited;
-//   }
-//   &:hover,
-//   &:focus,
-//   &:active {
-//     color: $color__link-hover;
-//   }
-//   &:focus {
-//     outline: thin dotted;
-//   }
-//   &:hover,
-//   &:active {
-//     outline: 0;
-//   }
-// }
+  &:visited {
+    color: $color__link-visited;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color__link-hover;
+  }
+  &:focus {
+    outline: thin dotted;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
 
 // /* Menus */
 
@@ -131,3 +131,14 @@
 //     width: 50%;
 //   }
 // }
+
+.search-input {
+  width: 0px;
+  display: none;
+  //   transition: width 1s ease-in-out;
+}
+
+.search-input.show {
+  display: inline-block;
+  width: 100px;
+}
