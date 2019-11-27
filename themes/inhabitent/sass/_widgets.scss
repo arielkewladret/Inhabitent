@@ -2,17 +2,17 @@
 # Widgets
 --------------------------------------------------------------*/
 
-// .widget {
-//   margin: 0 0 $base__space-unit;
-//   border-left: red 1px dotted;
+.widget {
+  margin: 0 0 $base__space-unit;
+  border-left: red 1px dotted;
 
-//   /* Make sure select elements fit in widgets. */
-//   select {
-//     max-width: 100%;
-//   }
-// }
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
+}
 
-// /* Search widget. */
-// .widget_search .search-submit {
-//   display: none;
-// }
+/* Search widget. */
+.widget_search .search-submit {
+  display: none;
+}
