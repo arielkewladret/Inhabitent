@@ -141,4 +141,6 @@ a {
 .search-input.show {
   display: inline-block;
   width: 100px;
+  cursor: text;
+  font-family: $font__body;
 }
