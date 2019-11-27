@@ -28,8 +28,11 @@
 					<div class="site-header-navigation">
 						<div class="site-branding">
 							<a href="/inhabitent"> 
-							<img class="mini-logo" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg'; ?>"/></a> 
+							<img class="mini-logo mini-logo--green" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg'; ?>"/>
+							<img class="mini-logo mini-logo--white" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg'; ?>"/>
+							</a> 
 
+						
 							<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url('/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 							<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 						</div>

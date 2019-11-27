@@ -10,9 +10,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<div class="site-branding">
-					<a href="/inhabitent"> 
-					<img class="mini-logo" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg'; ?>"/></a> 
+					
 		 
 		<!-- <div class="fp-banner"> -->
 		<!-- if client wants to customize -->
@@ -28,7 +26,7 @@ get_header(); ?>
       align-items: center;
       justify-content: center; -->
 
-				<div class="fp-banner" style="background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url('<?php the_post_thumbnail_url(); ?>') no-repeat center bottom; background-size: cover, cover; display: flex; align-items: center; justify-content: center;">
+				<div class="fp-banner" style="background: linear-gradient( to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), url('<?php the_post_thumbnail_url(); ?>') no-repeat center top; background-size: cover, cover; display: flex; align-items: center; justify-content: center;">
 					<img class="fp-banner-logo" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>"/>
 				</div>
 

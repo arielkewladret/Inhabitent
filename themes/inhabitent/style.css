@@ -680,9 +680,6 @@ h3 {
   background-color: rgba(0, 0, 0, 0.5); }
   .hfeed .site-header .site-branding {
     margin-left: 20px; }
-    .hfeed .site-header .site-branding a img {
-      height: 70px;
-      width: 70px; }
   .hfeed .site-header nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -706,6 +703,22 @@ h3 {
           text-decoration: none; }
           .hfeed .site-header nav ul li a:visited {
             color: #fff; }
+
+.mini-logo {
+  height: 70px;
+  width: 70px; }
+  .mini-logo--white {
+    display: none; }
+  .mini-logo--green {
+    display: block; }
+
+.home .mini-logo--white,
+.page-id-43 .mini-logo--white {
+  display: block; }
+
+.home .mini-logo--green,
+.page-id-43 .mini-logo--green {
+  display: none; }
 
 header {
   color: white; }

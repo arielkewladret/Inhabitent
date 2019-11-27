@@ -12,12 +12,8 @@
     .site-branding {
       margin-left: 20px;
       a {
-        img {
-          height: 70px;
-          width: 70px;
-        }
-      }
-    }
+      } // a
+    } // .site-branding
 
     nav {
       display: flex;
@@ -40,5 +36,27 @@
         }
       }
     }
+  }
+}
+
+// Logo
+.mini-logo {
+  height: 70px;
+  width: 70px;
+  &--white {
+    display: none;
+  }
+  &--green {
+    display: block;
+  }
+} // .mini-logo
+
+.home,
+.page-id-43 {
+  .mini-logo--white {
+    display: block;
+  }
+  .mini-logo--green {
+    display: none;
   }
 }
