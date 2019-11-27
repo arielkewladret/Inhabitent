@@ -10,8 +10,10 @@
 	<div id="primary" class="about-content-area">
 		
 		<main id="main" class="site-main" role="main">
-		<?php the_title( '<h1 class="entry-title-about">', '</h1>' ); ?>
-		<div class="fp-banner" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
+		
+		<div class="fp-banner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('<?php the_post_thumbnail_url(); ?>'); background-size: cover;">
+			<?php the_title( '<h1 class="entry-title-about">', '</h1>' ); ?>
+		</div>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 			<div class="container">

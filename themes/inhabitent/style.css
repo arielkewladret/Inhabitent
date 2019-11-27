@@ -831,9 +831,29 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .home .site-content .content-area {
+    width: 100%; }
 
+/*
+ * about page
+ */
 .about-content-area {
   width: 100%; }
+
+.page-template-default .fp-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh; }
+
+.page-template-default .entry-title-about {
+  color: white; }
 
 body {
   min-height: 100vh; }

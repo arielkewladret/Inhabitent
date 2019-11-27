@@ -78,10 +78,27 @@
 .home {
   .site-content {
     flex-direction: column;
+    .content-area {
+      width: 100%;
+    }
   }
 }
 
-// about page
+/*
+ * about page
+ */
 .about-content-area {
   width: 100%;
+}
+
+.page-template-default {
+  .fp-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .entry-title-about {
+    color: white;
+  }
 }
