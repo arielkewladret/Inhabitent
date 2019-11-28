@@ -58,12 +58,6 @@
 // h1 .page-title {
 // }
 
-// .entry-content {
-//   font-size: $base__space-unit;
-//   font-weight: 300;
-// //   width:70%;
-// }
-
 .site-content {
   display: flex;
   .content-area {
@@ -105,4 +99,10 @@
     padding: 20px;
     font-family: 'Novecento Sans Web', sans-serif;
   }
+}
+
+.entry-content {
+  font-size: $base__space-unit;
+  font-weight: 300;
+  width: 70%;
 }

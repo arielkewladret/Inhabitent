@@ -21,16 +21,16 @@
   }
 }
 
-.shop-name {
-  display: flex;
-  padding: 0px;
-  align-content: center;
-  padding: 0px;
+// .shop-name {
+//   display: flex;
+//   padding: 0px;
+//   align-content: center;
+//   padding: 0px;
+//   color: #404040;
 
-  h1 .shop-page-title {
-    color: #404040;
-    text-align: center;
-  }
+.shop-page-title {
+  color: #404040;
+  text-align: center;
 }
 
 .taxonomies-navigation {
@@ -76,5 +76,5 @@ ul {
   margin: 5px;
   border: 1px solid #ddd;
   padding: 20px;
-  //   height: 100px;
+  height: 100px;
 }

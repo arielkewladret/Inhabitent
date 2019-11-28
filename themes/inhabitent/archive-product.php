@@ -12,10 +12,12 @@ get_header(); ?>
 
 
 
-		<?php if ( have_posts() ) : ?>
 		<div class="shop-name">
 			<h1 class="shop-page-title">Shop Stuff</h1>
 		</div>
+
+		<?php if ( have_posts() ) : ?>
+
 
 		<div class="taxonomies-navigation">
 		<?php 

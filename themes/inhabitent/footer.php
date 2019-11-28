@@ -11,10 +11,8 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<!-- <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a> -->
 				</div> 
 				<div class="footer-container"> 
-					<!-- <div class="footer-block">  -->
 						<div class="contact-container">
 							<h3>Contact Info</h3>
 							<p>
@@ -34,7 +32,7 @@
 </span>
 							</div>
 							</div> 
-							<div class="footer-block">
+							<div class="hours-container">
 								<div class="hours">
 									<h3>Business Hours</h3>
 									<p>
@@ -47,12 +45,13 @@
 
 
 
-				<div class="footer-block">
-					<img url="../images/logos/inhabitent-logo-text-dark.svg" alt="">
-				</a> 
+				<div class="logo-block">
+					<img class="footer-logo" src="../logos/inhabitent-logo-tent.svg">
+					<!-- /Applications/MAMP/htdocs/Inhabitent/wp-content/themes/inhabitent/images/logos/inhabitent-logo-text.svg -->
+				 
 </div>
 </div>
-<div class="site-information">COPYRIGHT © 2019 INHABITENT</div>
+<div class="container">COPYRIGHT © 2019 INHABITENT</div>
 </div>
 </footer>
 

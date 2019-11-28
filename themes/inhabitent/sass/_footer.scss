@@ -2,25 +2,27 @@
   justify-content: space-between;
   line-height: 1.5;
   flex-direction: column;
-  //   height: 350px;
+  height: 350px;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   background: url('../../images/dark-wood@2x.png');
   background-size: contain;
   flex-direction: row;
+  align-items: left;
   color: white;
   // text-transform: uppercase;
   font-size: 15px;
   line-height: 1.5;
+  margin-bottom: 0.75rem;
+  width: 100%;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: center;
+  //   display: flex;
   align-items: center;
-  flex-direction: row;
-  // color: #d99054;
-  margin-bottom: 0.75rem;
+  //   // flex-direction: row;
+  color: white;
 }
 
 h3 {
@@ -31,30 +33,34 @@ h3 {
 }
 
 .footer-logo {
-  width: 25%;
-  padding: 60px;
+  width: 33%;
+  padding: 0px;
   display: flex;
-  align-items: flex-start;
 }
 
-// .site-information {
-//   align-content: baseline;
+// // .site-information {
+// //   align-content: baseline;
+// // }
+
+// .content-area {
+//   width: 100%;
 // }
 
-.content-area {
-  width: 100%;
-}
-
 .contact-container .days-of-operation {
-  padding: 1.9rem;
+  padding-left: 10px;
   color: white;
   font-size: 18px;
-  // font-weight: bold;
-  a {
-    color: white;
-  }
+  width: 33%;
 }
-.text-logo {
+a {
+  color: white;
+}
+
+//   .logo-block {
+//     width: 33%;
+//   }
+// }
+.logo-block {
   width: 20%;
   margin-left: 20%;
   margin-bottom: 9%;
@@ -66,7 +72,7 @@ span.days-of-operation {
 .fab ::before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 400px;
-  // content: '\f082';
+  padding: 10px;
 }
 
 .social-links {
@@ -76,24 +82,22 @@ span.days-of-operation {
   padding-left: 0px;
 }
 
-.site-information {
-  padding: 60px;
-}
-.footer-block {
-  flex-direction: row;
-}
+// .footer-block {
+//   flex-direction: row;
+// }
 
-.hours {
-  color: white;
-}
+// .hours-container {
+//   color: white;
+//   width: 25%;
+// }
 
-a {
-  color: white;
-}
+// a {
+//   color: white;
+// }
 
 .social {
   padding: 25px;
-  width: 10 px;
+  width: 10px;
   padding: 0px;
   display: inline-block;
   color: white;
@@ -117,8 +121,15 @@ a {
 li:hover {
   color: #e2574c;
 }
-// */ */ .container {
-//   text-align: center;
-//   text-transform: uppercase;
-//   color: white;
+.container {
+  font-family: $font__body, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+}
+// }
+
+// .footer-block {
+//   width: 25%;
 // }

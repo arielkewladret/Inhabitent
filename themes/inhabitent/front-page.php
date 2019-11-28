@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying front page.
  *
  * @package RED_Starter_Theme
  */
@@ -18,13 +18,6 @@ get_header(); ?>
 	
 
 			<?php while ( have_posts() ) : the_post(); ?>
-
-			<!-- TODO :linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), -->
-				<!-- background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url(https://tent.academy.red/wp-content/uploads/2016/04/about-hero.jpg) no-repeat center bottom; 
-      background-size: cover, cover;
-      display: flex;
-      align-items: center;
-      justify-content: center; -->
 
 				<div class="fp-banner" style="background: linear-gradient( to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), url('<?php the_post_thumbnail_url(); ?>') no-repeat center top; background-size: cover, cover; display: flex; align-items: center; justify-content: center;">
 					<img class="fp-banner-logo" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'; ?>"/>

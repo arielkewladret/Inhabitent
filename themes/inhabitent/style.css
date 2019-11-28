@@ -244,6 +244,7 @@ textarea {
 /* Headings */
 h1,
 h2,
+h3,
 h4,
 h5,
 h6 {
@@ -325,46 +326,48 @@ q {
   q:before,
   q:after {
     content: ''; }
-
-hr {
-  background-color: #ccc;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1.5rem; }
-
-ul,
-ol {
-  margin: 0 0 1.5rem 3rem; }
-
-ul {
-  list-style: disc; }
-
-ol {
-  list-style: decimal; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5rem; }
-
-dt {
-  font-weight: bold; }
-
-dd {
-  margin: 0 1.5rem 1.5rem; }
-
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
-
-table {
-  margin: 0 0 1.5rem;
-  width: 100%; }
-
-.main-navigation ul {
-  display: block; }
+  blockquote hr,
+  q hr {
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5rem; }
+  blockquote ul,
+  blockquote ol,
+  q ul,
+  q ol {
+    margin: 0 0 1.5rem 3rem; }
+  blockquote ul,
+  q ul {
+    list-style: disc; }
+  blockquote ol,
+  q ol {
+    list-style: decimal; }
+  blockquote li > ul,
+  blockquote li > ol,
+  q li > ul,
+  q li > ol {
+    margin-bottom: 0;
+    margin-left: 1.5rem; }
+  blockquote dt,
+  q dt {
+    font-weight: bold; }
+  blockquote dd,
+  q dd {
+    margin: 0 1.5rem 1.5rem; }
+  blockquote img,
+  q img {
+    height: auto;
+    /* Make sure images are scaled correctly. */
+    max-width: 100%;
+    /* Adhere to container width. */ }
+  blockquote table,
+  q table {
+    margin: 0 0 1.5rem;
+    width: 100%; }
+  blockquote .main-navigation ul,
+  q .main-navigation ul {
+    display: block; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -676,17 +679,9 @@ object {
     height: 100px;
     width: 150px; }
 
-.shop-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: 0px; }
-  .shop-name h1 .shop-page-title {
-    color: #404040;
-    text-align: center; }
+.shop-page-title {
+  color: #404040;
+  text-align: center; }
 
 .taxonomies-navigation {
   display: -webkit-box;
@@ -726,7 +721,8 @@ ul {
 .wp-post-image {
   margin: 5px;
   border: 1px solid #ddd;
-  padding: 20px; }
+  padding: 20px;
+  height: 100px; }
 
 .container {
   max-width: 1120px;
@@ -1117,34 +1113,33 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: url("../../images/dark-wood@2x.png");
   background-size: contain;
   -ms-flex-direction: row;
       flex-direction: row;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   color: white;
   font-size: 15px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  width: 100%; }
 
 .footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-bottom: 0.75rem; }
+  color: white; }
 
 h3 {
   color: #d99054;
@@ -1153,26 +1148,22 @@ h3 {
   font-family: "Novecento Sans Web", sans-serif; }
 
 .footer-logo {
-  width: 25%;
-  padding: 60px;
+  width: 33%;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-
-.content-area {
-  width: 100%; }
+  display: flex; }
 
 .contact-container .days-of-operation {
-  padding: 1.9rem;
+  padding-left: 10px;
   color: white;
-  font-size: 18px; }
-  .contact-container .days-of-operation a {
-    color: white; }
+  font-size: 18px;
+  width: 33%; }
 
-.text-logo {
+a {
+  color: white; }
+
+.logo-block {
   width: 20%;
   margin-left: 20%;
   margin-bottom: 9%; }
@@ -1182,7 +1173,8 @@ span.days-of-operation {
 
 .fab ::before {
   font-family: 'Font Awesome 5 Free';
-  font-weight: 400px; }
+  font-weight: 400px;
+  padding: 10px; }
 
 .social-links {
   font-size: 1.25rem;
@@ -1190,24 +1182,9 @@ span.days-of-operation {
   margin-left: 0px;
   padding-left: 0px; }
 
-.site-information {
-  padding: 60px; }
-
-.footer-block {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-
-.hours {
-  color: white; }
-
-a {
-  color: white; }
-
 .social {
   padding: 25px;
-  width: 10 px;
+  width: 10px;
   padding: 0px;
   display: inline-block;
   color: white;
@@ -1226,6 +1203,13 @@ a {
 
 li:hover {
   color: #e2574c; }
+
+.container {
+  font-family: "Novecento Sans Web", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px; }
 
 html {
   --base-spacing: 1.5rem; }
@@ -1274,6 +1258,11 @@ html {
   font-size: 3em;
   padding: 20px;
   font-family: 'Novecento Sans Web', sans-serif; }
+
+.entry-content {
+  font-size: 1.5rem;
+  font-weight: 300;
+  width: 70%; }
 
 body {
   min-height: 100vh; }
