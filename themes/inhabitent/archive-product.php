@@ -8,15 +8,13 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="shop-container" role="main">
+	<main id="main" class="shop-container" role="main">
 
 
+	<h1 class="entry-title-shop">Shop Stuff</h1> 
+	
 
-		<div class="shop-name">
-			<h1 class="shop-page-title">Shop Stuff</h1>
-		</div>
-
-		<?php if ( have_posts() ) : ?>
+		 <?php if ( have_posts() ) : ?> 
 
 
 		<div class="taxonomies-navigation">
@@ -59,15 +57,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<!-- <header class="page-header"> -->
-				<?php
-					// the_archive_title( '<h1 class="page-title">', '</h1>' );
-					// the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-
-          
-
-
+				
 		
 		<?php 
 		// Product loop

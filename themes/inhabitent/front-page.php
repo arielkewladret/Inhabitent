@@ -42,10 +42,10 @@ if(is_page('About')){
 }
 ?> -->
 
+<h2> Shop Stuff</h2> 
 
 <section>
-	<div class="container">
-	<h2> Shop Stuff</h2> 
+	<div class="shop-container">
 
 	
    <!-- double check taxonomy name -->

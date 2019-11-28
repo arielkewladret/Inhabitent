@@ -1,47 +1,57 @@
 .shop-container {
   display: flex;
   justify-content: space-between;
-
-  .shop-container-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    width: 90%;
-    margin: 0 auto;
-    height: 1000px;
-    padding-top: 200px;
-    padding-bottom: 85px;
-  }
-
-  article {
-    margin: 0;
-    padding: 0;
-    height: 100px;
-    width: 150px;
-  }
+  border-top: 1px dotted #404040;
 }
 
-// .shop-name {
-//   display: flex;
-//   padding: 0px;
-//   align-content: center;
-//   padding: 0px;
-//   color: #404040;
+.shop-container-grid {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  height: 1000px;
+  padding-top: 200px;
+  padding-bottom: 85px;
+  border-top: 1px dotted #404040;
+}
+
+article {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  width: 150px;
+
+  // border: 1px solid #ddd;
+}
+
+.shop-name {
+  display: flex;
+  padding: 0px;
+  align-content: center;
+  padding: 0px;
+  color: #404040;
+}
 
 .shop-page-title {
   color: #404040;
   text-align: center;
+  text-transform: uppercase;
+  font-family: $font__body, sans-serif;
 }
 
 .taxonomies-navigation {
   display: flex;
-  width: 1%;
-
+  justify-content: center;
+  //   width: 1%;
   flex-direction: row;
 }
 
 ul {
   font-size: 18px;
+  color: $font__body, sans-serif;
   text-transform: uppercase;
   font-family: $font__body;
   text-decoration: none;
@@ -73,8 +83,13 @@ ul {
 }
 
 .wp-post-image {
-  margin: 5px;
-  border: 1px solid #ddd;
+  // border: 1px solid #ddd;
+}
+
+.entry-header-shop .wp-post-image {
+  height: 200px;
+  border-bottom: 2px solid #e1e1e1;
   padding: 20px;
   height: 100px;
+  margin: 5px;
 }

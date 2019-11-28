@@ -4,7 +4,7 @@
 
 .widget {
   margin: 0 0 $base__space-unit;
-  border-left: red 1px dotted;
+  border-left: $color__background-pre 1px dotted;
 
   /* Make sure select elements fit in widgets. */
   select {
