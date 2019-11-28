@@ -15,9 +15,16 @@
 .fp-term {
   width: 25%;
   border: 1px solid #ddd;
+  border-top: 4px solid #ddd;
   margin: 5px;
   text-align: center;
   box-shadow: 1px solid #ddd;
+
+  &:hover {
+    border: 1px solid #d99054;
+    border-top: 4px solid #d99054;
+    // border-top: 4px solid #d99054;
+  }
 
   img {
     max-width: 64px;
@@ -27,6 +34,8 @@
     display: block;
   }
 }
+
+//fp adventures section
 
 .fp-adventures {
   display: grid;
@@ -48,6 +57,7 @@
 }
 
 .fp-adventures-entry {
+  position: relative;
   overflow: hidden;
   min-height: 100%;
   min-width: 100%;
@@ -63,6 +73,40 @@
   margin: 50px;
 }
 
+.fp-adventures-blog-tag {
+  position: relative;
+  top: 0;
+  color: #fff;
+  font-family: $font__main, serif;
+  font-weight: 400;
+  font-size: $font__line-height-body;
+  text-transform: none;
+
+  a {
+    color: #fff;
+
+    //   display: flex;
+    //   flex-direction: flex-start;
+    //   justify-content: space-between;
+    //   font-family: $font__body;
+    //   // padding: 50px;
+    //   color: white;
+    //   text-decoration: none;
+    &:hover {
+      color: $color__background-ins;
+    }
+  }
+
+  &:hover {
+    color: $color__background-ins;
+    outline: 0;
+  }
+}
+
+// end adventures section //
+
+// begin journals section//
+
 .fp-journal-entry {
   display: flex;
   border: 1px solid #e1e1e1;
@@ -77,6 +121,11 @@
 }
 
 .fp-journal-info {
+  .fp-journal-info-btn {
+    &:hover {
+      color: white;
+    }
+  }
   &-date {
     color: $color__text-main;
     font-size: 0.75rem;
@@ -92,6 +141,7 @@
     letter-spacing: 2px;
     margin-bottom: 0.75rem;
     font-weight: 800;
+    // padding-left: 20px;
 
     &:visited {
       color: $color__link-hover;
@@ -103,17 +153,33 @@
     border: 1px solid black;
     padding: 1rem;
     margin-bottom: 0.75rem;
-    // width: 100px;
+    width: 44%;
+    height: 40%;
+    text-align: center;
+    &:hover {
+      background-color: $color__font-green;
+      outline: 0;
+    }
 
     &:visited {
       color: inherit;
-
-      &:hover {
-        background-color: $color__font-green;
-        color: white;
-      }
     }
   } // btn
+}
+
+a {
+  display: flex;
+  flex-direction: flex-start;
+  justify-content: space-between;
+  font-family: $font__body;
+  text-transform: uppercase;
+  // padding: 50px;
+  color: $color__text-black;
+  text-decoration: none;
+  &:hover {
+    color: white;
+    border: 1px solid white;
+  }
 }
 
 .adventures-button-more {
@@ -129,7 +195,7 @@
   color: white;
   box-shadow: none;
   text-shadow: none;
-  font-family: 'Novecento Sans Web';
+  font-family: $font__body;
   font-size: 14.4px;
   text-transform: uppercase;
   margin: 20px;

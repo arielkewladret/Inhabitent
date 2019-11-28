@@ -145,15 +145,19 @@ a {
 //   // transition-delay: width 5s ease-in-out;
 // }
 
-.search-input {
-  width: 0px;
-  display: none;
+.site-header {
+  position: absolute;
+  top: 0;
 }
-.search-input.show {
+
+.search-input input {
+  width: 0px;
+  transition: all 1s ease-in-out;
   display: inline-block;
+}
+.search-input.show input {
   width: 100px;
   opacity: 1;
-  // transition: all 2s ease-in-out;
 }
 
 // green color nav bar for unique pages

@@ -1,3 +1,6 @@
+
+<!-- ///TO-DO -->
+
 <?php
 /**
  * Template part for displaying products.
@@ -7,21 +10,16 @@
 
 ?>
 
-<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="entry">
-        <?php if ( has_post_thumbnail() ) : ?>
-            <a href="<?php echo get_post_permalink(); ?>">
-            <?php the_post_thumbnail('shop'); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php the_post_thumbnail( 'large' ); ?>
+		<?php endif; ?>
 
-    </a>
-        <?php endif; ?>
+        <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+        <!-- <span class="price" -->
 
-        <div class="product-price-info">
-            <p><?php echo get_the_title(); ?> ...
-            <?php the_field( 'price' ); ?></p>
-        </div> 
+	</header><!-- .entry-header -->
 
-    </div><!-- .entry div -->
-        </div><!-- #post-## -->
-	</div><!-- .entry-content -->
+
 </article><!-- #post-## -->

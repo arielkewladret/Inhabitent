@@ -81,9 +81,13 @@ if(is_page('About')){
 		endif; 
 		?>  
 	</div>
-    </section>
+	</section>
+	
 
 
+
+<section> 
+	<div class="container">
 
 <h2> Inhabitent Journal </h2> 
 <?php
@@ -139,12 +143,15 @@ $adventures_posts = get_posts( $args ); // returns an array of posts
 			} 
 			?>
 
-			<h2>
-				<a href="<?php echo get_the_permalink(); ?>">
-				<?php the_title();?></a>
-			</h2>
+			<!-- //the title  -->
 
-			<a href="<?php echo get_the_permalink(); ?>">Read More</a>
+			<div class="fp-adventures-blog-tag">
+				<a class="fp-adventures-blog" href="<?php echo get_the_permalink(); ?>">
+					<?php the_title();?>
+				</a>
+		</div>
+
+			<a class="fp-adventures-blog" href="<?php echo get_the_permalink(); ?>">Read More</a>
 		
 		</article>
 	<?php endforeach; wp_reset_postdata(); ?>

@@ -1,3 +1,12 @@
+// /*--------------------------------------------------------------
+// # Page Templates
+// --------------------------------------------------------------*/
+// /* Front page */
+// .site-information {
+//   // flex-position:
+//   // align-self: baseline;
+// }
+
 .container {
   max-width: 1120px;
   width: 75%;
@@ -17,32 +26,10 @@
   margin: 5.5rem 0 0;
 }
 
-// /*--------------------------------------------------------------
-// # Page Templates
-// --------------------------------------------------------------*/
-// /* Front page */
-// .site-information {
-//   // flex-position:
-//   // align-self: baseline;
-// }
-
 .widget-area {
   width: 100%;
 }
 
-a {
-  display: flex;
-  flex-direction: flex-start;
-  justify-content: space-between;
-  // padding: 50px;
-  color: #248a83;
-  text-decoration: none;
-  &:hover {
-    color: #fff9c0;
-  }
-}
-
-// Front page
 .fp-journal-entries-row {
   display: flex;
 }
@@ -55,9 +42,6 @@ a {
 .fp-adventures {
   display: flex;
 }
-//   width: 25%;
-//   border: 1px solid black;
-// }
 
 .fp-adventures-entry {
   width: 25%;
@@ -77,17 +61,6 @@ ul {
   justify-content: center;
   align-items: center;
   background-position: top center;
-}
-// .fp-banner-logo {
-// }
-
-// h2 {
-//   text-align: center;
-//   color: black;
-// }
-
-a {
-  text-decoration: none;
 }
 
 .product-type-list {

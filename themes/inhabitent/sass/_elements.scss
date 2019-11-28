@@ -1,6 +1,6 @@
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
+// /*--------------------------------------------------------------
+// # Elements
+// --------------------------------------------------------------*/
 
 html {
   box-sizing: border-box;
@@ -16,9 +16,9 @@ html {
 
 body {
   background: $color__background-body;
-
-  /* Fallback for when there is no custom background color defined. */
 }
+
+/* Fallback for when there is no custom background color defined. */
 
 blockquote,
 q {
