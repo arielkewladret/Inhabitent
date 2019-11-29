@@ -1,8 +1,12 @@
-Description: Custom Wordpress multi-page mockup theme for a 'Hipster' Camping Supplies Store
+Outdoor lifestyle page for afforadable products that support an alternative outdoor lifestyle & adventure products.
 
-Languages Applied: PHP, HTML, CSS/SASS, JavaScript
+Custom multi-page WordPress mock-up theme with made custom plug-ins.
 
-Practices: Gutenberg Blocks, Custom Plug-Ins, Contact Form 7
+Modalities applied to build this theme were:
+
+HTML, CSS, PHP, jQuery/JavaScript
+
+Wordprss Practices: Gutenberg Blocks, Custom Plug-Ins, Contact Form 7
 
 ## Installation
 
@@ -21,4 +25,3 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
 ### 4. Update the proxy in `gulpfile.js`
 
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-

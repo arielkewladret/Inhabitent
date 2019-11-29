@@ -413,40 +413,29 @@ a {
     color: #fff9c0; }
   a:hover, a:focus, a:active {
     color: #fff9c0; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
-.site-header {
-  position: absolute;
-  top: 0; }
-
-.search-input input {
-  width: 0px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  display: inline-block; }
-
-.search-input.show input {
-  width: 100px;
-  opacity: 1; }
-
-.single ul {
-  color: #21759b;
-  text-shadow: none; }
-
-.archive ul {
-  color: #21759b;
-  text-shadow: none; }
-
-.blog ul {
-  color: #21759b;
-  text-shadow: none; }
-
-.error404 ul a {
-  text-shadow: none;
-  color: #21759b; }
+  a .site-header {
+    position: absolute;
+    top: 0; }
+  a .search-input input {
+    width: 0px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    display: inline-block; }
+  a .search-input.show input {
+    width: 100px;
+    opacity: 1; }
+  a .single ul {
+    color: #21759b;
+    text-shadow: none; }
+  a .archive ul {
+    color: #21759b;
+    text-shadow: none; }
+  a .blog ul {
+    color: #21759b;
+    text-shadow: none; }
+  a .error404 ul a {
+    text-shadow: none;
+    color: #21759b; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -649,8 +638,7 @@ object {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-top: 1px dotted #404040; }
+          justify-content: space-between; }
 
 .shop-container-grid {
   display: grid;
@@ -662,8 +650,7 @@ object {
   margin: 0 auto;
   height: 1000px;
   padding-top: 200px;
-  padding-bottom: 85px;
-  border-top: 1px dotted #404040; }
+  padding-bottom: 85px; }
 
 article {
   margin: 0;
@@ -824,9 +811,6 @@ ul {
 
 .entry-content p {
   color: black; }
-
-.shop-items-grid {
-  grid-template-columns: 1fr 1fr 1fr; }
 
 .banner-image img {
   width: 100%; }
@@ -1101,16 +1085,6 @@ h3 {
 .home .mini-logo--green,
 .page-id-43 .mini-logo--green {
   display: none; }
-
-.entry-title-about h1 .page-template-default {
-  color: white;
-  text-align: center;
-  font-size: 3em;
-  padding: 20px;
-  font-family: 'Novecento Sans Web', sans-serif; }
-
-header {
-  color: white; }
 
 .site-footer {
   -webkit-box-pack: justify;

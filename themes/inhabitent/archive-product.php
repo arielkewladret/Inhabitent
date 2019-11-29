@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 /**
  * The template for displaying archive-products pages.
  *
@@ -11,10 +11,10 @@ get_header(); ?>
 	<main id="main" class="shop-container" role="main">
 
 
-	<h1 class="entry-title-shop">Shop Stuff</h1> 
+	<h1 class="entry-title-shop">Shop Stuff></h1>
 	
 
-		 <?php if ( have_posts() ) : ?> 
+		 <?php if ( have_posts() ) : ?> 			
 
 
 		<div class="taxonomies-navigation">
@@ -57,10 +57,10 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-				
+			<!-- // Product loop -->
+			
 		
 		<?php 
-		// Product loop
 		$shop_loop = new WP_Query( array(
 			'post_type' => 'product',
 			'order' => 'DESC',
@@ -88,4 +88,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
-
+ -->
