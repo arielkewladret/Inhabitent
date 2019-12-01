@@ -120,12 +120,18 @@
   line-height: $base__space-unit;
 }
 
+//to do //why doesn't the padding work on all 3?//
+
 .fp-journal-info {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+
   .fp-journal-info-btn {
     &:hover {
       color: white;
+      // border: white;
+      text-decoration: none;
     }
   }
   &-date {
@@ -140,7 +146,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
     letter-spacing: 2px;
     margin-bottom: 0.75rem;
     font-weight: 800;
@@ -154,10 +160,12 @@
     display: inline-block;
     color: $color__text-black;
     border: 1px solid black;
+    text-decoration: none;
     padding: 1rem;
     margin-bottom: 0.75rem;
-    width: 44%;
-    height: 40%;
+    width: 40%;
+    height: 36%;
+    padding: 8px;
     text-align: center;
     &:hover {
       background-color: $color__font-green;
@@ -184,6 +192,10 @@
     }
   } // btn
 }
+
+// .fp-journal-info-date {
+//   padding: 20px;
+// }
 
 .adventures-button-more {
   position: relative;
@@ -220,7 +232,7 @@
   margin-right: auto;
   text-align: center;
   background-color: #248a83;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   line-height: 1;
   border: none;
   border-radius: 0;
@@ -230,7 +242,8 @@
   font-family: 'Novecento Sans Web';
   font-size: 14.4px;
   text-transform: uppercase;
-  margin: 20px;
+  margin: 65px;
+  text-decoration: none;
 
   &:hover {
     background: #19625d;

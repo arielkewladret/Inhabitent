@@ -41,15 +41,17 @@
 									<p><span class="days-of-operation">Sunday:</span> Closed</p></div>
 									
 
+									</div>
 
+			
+			<div class="logo-block"> 
 
-				<div class="logo-block">
-					<img class="footer-logo" src="../logos/inhabitent-logo-tent.svg">
+					<img class="footer-logo" src = "<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg">
+			</div>
 					<!-- /Applications/MAMP/htdocs/Inhabitent/wp-content/themes/inhabitent/images/logos/inhabitent-logo-text.svg -->
 				 
 </div>
-</div>
-<div class="container">COPYRIGHT © 2019 INHABITENT</div>
+<div class="container">COPYRIGHT © 2019 Isn't-Happen-tent</div>
 </div>
 </footer>
 

@@ -1,25 +1,35 @@
 .site-footer {
   justify-content: space-between;
   line-height: 1.5;
-  flex-direction: column;
+  flex-direction: row;
   height: 350px;
   display: flex;
-  // justify-content: space-evenly;
+  // justify-content: space-between;
   flex-wrap: wrap;
   background: url('../../images/dark-wood@2x.png');
   background-size: contain;
-  flex-direction: row;
+  // flex-direction: row;
   align-items: left;
   color: white;
   font-size: 15px;
   line-height: 1.5;
   margin-bottom: 0.75rem;
   width: 100%;
+  padding: 3rem;
 }
 
 .footer-container {
   // align-items: center;
   color: white;
+}
+
+.footer-logo {
+  width: 225px;
+  // flex-grow: 2;
+  // margin: 70px;
+  img {
+    width: 285px;
+  }
 }
 
 h3 {

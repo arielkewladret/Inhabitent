@@ -945,9 +945,11 @@ article {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  padding: 10px; }
   .fp-journal-info .fp-journal-info-btn:hover {
-    color: white; }
+    color: white;
+    text-decoration: none; }
   .fp-journal-info-date {
     color: #404040;
     font-size: 0.75rem;
@@ -959,7 +961,7 @@ article {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
     letter-spacing: 2px;
     margin-bottom: 0.75rem;
     font-weight: 800; }
@@ -969,10 +971,12 @@ article {
     display: inline-block;
     color: black;
     border: 1px solid black;
+    text-decoration: none;
     padding: 1rem;
     margin-bottom: 0.75rem;
-    width: 44%;
-    height: 40%;
+    width: 40%;
+    height: 36%;
+    padding: 8px;
     text-align: center; }
     .fp-journal-info-btn:hover {
       background-color: #248a83;
@@ -1031,7 +1035,7 @@ article {
   margin-right: auto;
   text-align: center;
   background-color: #248a83;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   line-height: 1;
   border: none;
   border-radius: 0;
@@ -1042,7 +1046,8 @@ article {
   font-family: 'Novecento Sans Web';
   font-size: 14.4px;
   text-transform: uppercase;
-  margin: 20px; }
+  margin: 65px;
+  text-decoration: none; }
   .fp-term-link:hover {
     background: #19625d;
     outline: 0; }
@@ -1140,10 +1145,10 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   line-height: 1.5;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1152,8 +1157,6 @@ h3 {
       flex-wrap: wrap;
   background: url("../../images/dark-wood@2x.png");
   background-size: contain;
-  -ms-flex-direction: row;
-      flex-direction: row;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
@@ -1161,10 +1164,16 @@ h3 {
   font-size: 15px;
   line-height: 1.5;
   margin-bottom: 0.75rem;
-  width: 100%; }
+  width: 100%;
+  padding: 3rem; }
 
 .footer-container {
   color: white; }
+
+.footer-logo {
+  width: 225px; }
+  .footer-logo img {
+    width: 285px; }
 
 h3 {
   color: #d99054;
