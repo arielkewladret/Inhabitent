@@ -325,17 +325,6 @@ ul,
 ol {
   margin: 0 0 1.5rem 3rem; }
 
-ul {
-  list-style: disc; }
-
-ol {
-  list-style: decimal; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5rem; }
-
 dt {
   font-weight: bold; }
 
@@ -407,35 +396,43 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-a {
-  color: #fff; }
-  a:visited {
-    color: #fff9c0; }
-  a:hover, a:focus, a:active {
-    color: #fff9c0; }
-  a .site-header {
-    position: absolute;
-    top: 0; }
-  a .search-input input {
-    width: 0px;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-    display: inline-block; }
-  a .search-input.show input {
-    width: 100px;
-    opacity: 1; }
-  a .single ul {
-    color: #21759b;
-    text-shadow: none; }
-  a .archive ul {
-    color: #21759b;
-    text-shadow: none; }
-  a .blog ul {
-    color: #21759b;
-    text-shadow: none; }
-  a .error404 ul a {
-    text-shadow: none;
-    color: #21759b; }
+.search-input {
+  width: 0px;
+  display: none; }
+
+.search-input.show {
+  display: inline-block;
+  width: 100px;
+  cursor: text;
+  font-family: "Novecento Sans Web";
+  -webkit-transition-delay: width 5s ease-in-out;
+          transition-delay: width 5s ease-in-out; }
+
+.site-header {
+  position: absolute;
+  top: 0; }
+
+.search-input input {
+  width: 0px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  display: inline-block; }
+
+.search-input.show input {
+  width: 100px;
+  opacity: 1; }
+
+.single ul {
+  color: #21759b;
+  text-shadow: none; }
+
+.blog ul {
+  color: #21759b;
+  text-shadow: none; }
+
+.error404 ul a {
+  text-shadow: none;
+  color: #21759b; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -638,7 +635,11 @@ object {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .shop-container-grid {
   display: grid;
@@ -646,17 +647,40 @@ object {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   padding: 20px;
-  width: 90%;
-  margin: 0 auto;
-  height: 1000px;
-  padding-top: 200px;
-  padding-bottom: 85px; }
+  width: 100%;
+  margin: 0 auto; }
+  .shop-container-grid .product {
+    width: 100%;
+    height: 100%; }
+    .shop-container-grid .product .product-img-wrap {
+      height: 300px; }
+    .shop-container-grid .product .wp-post-image {
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+    .shop-container-grid .product .product-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: black;
+      overflow: hidden; }
+
+.product-info::after {
+  content: '................................';
+  position: absolute; }
 
 article {
   margin: 0;
-  padding: 0;
-  height: 100px;
-  width: 150px; }
+  padding: 0; }
 
 .shop-name {
   display: -webkit-box;
@@ -684,25 +708,27 @@ article {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
-
-ul {
-  font-size: 18px;
-  color: "Novecento Sans Web", sans-serif;
-  text-transform: uppercase;
-  font-family: "Novecento Sans Web";
+          flex-direction: row;
+  list-style: none;
   text-decoration: none;
-  list-style: none; }
-
-.entry-header-shop a {
-  color: black;
-  font-size: 12px;
-  font-family: "Merriweather Web", serif;
-  font-size: 1rem;
-  text-transform: capitalize; }
+  color: color; }
+  .taxonomies-navigation a {
+    font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase;
+    list-style: none;
+    color: #248a83;
+    font-size: 1.2rem; }
+    .taxonomies-navigation a .archive ul {
+      color: #21759b;
+      text-shadow: none;
+      text-decoration: none;
+      list-style: none; }
 
 .entry-title-shop {
-  margin: 0; }
+  text-align: center;
+  padding: 0px; }
+  .entry-title-shop a {
+    color: black; }
 
 .products-container {
   display: -webkit-box;
@@ -721,7 +747,7 @@ ul {
 
 .container {
   max-width: 1120px;
-  width: 75%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto; }
 
@@ -757,10 +783,6 @@ ul {
 
 .fp-adventures-entry {
   width: 25%; }
-
-ul {
-  padding: 0;
-  float: right; }
 
 .fp-banner {
   background-size: cover, cover;
@@ -808,6 +830,18 @@ ul {
          object-fit: cover;
       width: 100%;
       height: 100%; }
+
+.single-product .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.left-col {
+  width: 50%; }
+
+.right-col {
+  width: 50%;
+  text-align: left; }
 
 .entry-content p {
   color: black; }
@@ -904,60 +938,65 @@ ul {
   height: 400px;
   line-height: 1.5rem; }
 
-.fp-journal-info .fp-journal-info-btn:hover {
-  color: white; }
-
-.fp-journal-info-date {
-  color: #404040;
-  font-size: 0.75rem;
-  font-family: "Merriweather Web";
-  margin-bottom: 0.75rem; }
-
-.fp-journal-info-title {
-  color: #248a83;
-  font-family: "Novecento Sans Web", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  text-align: center;
-  letter-spacing: 2px;
-  margin-bottom: 0.75rem;
-  font-weight: 800; }
-  .fp-journal-info-title:visited {
-    color: midnightblue; }
-
-.fp-journal-info-btn {
-  display: inline-block;
-  color: black;
-  border: 1px solid black;
-  padding: 1rem;
-  margin-bottom: 0.75rem;
-  width: 44%;
-  height: 40%;
-  text-align: center; }
-  .fp-journal-info-btn:hover {
-    background-color: #248a83;
-    outline: 0; }
-  .fp-journal-info-btn:visited {
-    color: inherit; }
-
-a {
+.fp-journal-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: flex-start;
-          flex-direction: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-family: "Novecento Sans Web";
-  text-transform: uppercase;
-  color: black;
-  text-decoration: none; }
-  a:hover {
-    color: white;
-    border: 1px solid white; }
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .fp-journal-info .fp-journal-info-btn:hover {
+    color: white; }
+  .fp-journal-info-date {
+    color: #404040;
+    font-size: 0.75rem;
+    font-family: "Merriweather Web";
+    margin-bottom: 0.75rem; }
+  .fp-journal-info-title {
+    color: #248a83;
+    font-family: "Novecento Sans Web", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
+    font-weight: 800; }
+    .fp-journal-info-title:visited {
+      color: midnightblue; }
+  .fp-journal-info-btn {
+    display: inline-block;
+    color: black;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    width: 44%;
+    height: 40%;
+    text-align: center; }
+    .fp-journal-info-btn:hover {
+      background-color: #248a83;
+      outline: 0; }
+    .fp-journal-info-btn:visited {
+      color: inherit; }
+    .fp-journal-info-btn a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: flex-start;
+              flex-direction: flex-start;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      font-family: "Novecento Sans Web";
+      text-transform: uppercase;
+      color: black;
+      text-decoration: none; }
+      .fp-journal-info-btn a:hover {
+        color: white;
+        border: 1px solid white; }
 
 .adventures-button-more {
   position: relative;
@@ -974,12 +1013,17 @@ a {
           box-shadow: none;
   text-shadow: none;
   font-family: "Novecento Sans Web";
-  font-size: 14.4px;
+  font-size: 1.2rem;
   text-transform: uppercase;
   margin: 20px; }
   .adventures-button-more:hover {
     background: #19625d;
-    outline: 0; }
+    outline: 0;
+    text-shadow: none; }
+
+.adventure-button-container {
+  padding-left: 30px;
+  padding-bottom: 50px; }
 
 .fp-term-link {
   position: relative;
@@ -1025,6 +1069,11 @@ h3 {
   .journal-entry-container img {
     min-width: 100%;
     min-height: 100%; }
+
+.journal-container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto; }
 
 .site-header-navigation {
   display: -webkit-box;
@@ -1099,9 +1148,6 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: url("../../images/dark-wood@2x.png");
@@ -1127,25 +1173,18 @@ h3 {
   font-family: "Novecento Sans Web", sans-serif; }
 
 .footer-logo {
-  width: 33%;
   padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .contact-container .days-of-operation {
-  padding-left: 10px;
+  padding-left: 0px;
   color: white;
-  font-size: 18px;
-  width: 33%; }
+  font-size: 18px; }
 
 a {
   color: white; }
-
-.logo-block {
-  width: 20%;
-  margin-left: 20%;
-  margin-bottom: 9%; }
 
 span.days-of-operation {
   font-weight: bold; }
@@ -1199,14 +1238,17 @@ li:hover {
 html {
   --base-spacing: 1.5rem; }
 
-.site-content .content-area {
-  width: 75%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
-
-.site-content .widget-area {
-  width: 25%; }
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .site-content .content-area {
+    width: 75%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .site-content .widget-area {
+    width: 25%; }
 
 .home .site-content {
   -webkit-box-orient: vertical;

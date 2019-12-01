@@ -121,6 +121,8 @@
 }
 
 .fp-journal-info {
+  display: flex;
+  flex-direction: column;
   .fp-journal-info-btn {
     &:hover {
       color: white;
@@ -135,6 +137,7 @@
   &-title {
     color: $color__font-green;
     font-family: $font__body, sans-serif;
+    text-decoration: none;
     text-transform: uppercase;
     font-size: 1.5rem;
     text-align: center;
@@ -164,22 +167,22 @@
     &:visited {
       color: inherit;
     }
-  } // btn
-}
 
-a {
-  display: flex;
-  flex-direction: flex-start;
-  justify-content: space-between;
-  font-family: $font__body;
-  text-transform: uppercase;
-  // padding: 50px;
-  color: $color__text-black;
-  text-decoration: none;
-  &:hover {
-    color: white;
-    border: 1px solid white;
-  }
+    a {
+      display: flex;
+      flex-direction: flex-start;
+      justify-content: space-between;
+      font-family: $font__body;
+      text-transform: uppercase;
+      // padding: 50px;
+      color: $color__text-black;
+      text-decoration: none;
+      &:hover {
+        color: white;
+        border: 1px solid white;
+      }
+    }
+  } // btn
 }
 
 .adventures-button-more {
@@ -196,14 +199,19 @@ a {
   box-shadow: none;
   text-shadow: none;
   font-family: $font__body;
-  font-size: 14.4px;
+  font-size: 1.2rem;
   text-transform: uppercase;
   margin: 20px;
 
   &:hover {
     background: #19625d;
     outline: 0;
+    text-shadow: none;
   }
+}
+.adventure-button-container {
+  padding-left: 30px;
+  padding-bottom: 50px;
 }
 
 .fp-term-link {
@@ -258,4 +266,10 @@ h3 {
     min-width: 100%;
     min-height: 100%;
   }
+}
+
+.journal-container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }

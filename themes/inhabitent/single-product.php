@@ -15,19 +15,32 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-		<h2>Price: <?php the_field('price'); ?></h2>
+		
 
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+						
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<?php the_post_navigation(); ?>
+				<div class="left-col">
+						<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail( 'large' ); ?>
+						<?php endif; ?>
+				</div>
+			
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+				<div class="right-col">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					<h2>$ <?php the_field('number'); ?></h2>
+					<?php the_content(); ?>
+				</div>
+			
+
+				
+			</article><!-- #post-## -->
+
+	
+
+			
 
 
 
@@ -36,5 +49,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

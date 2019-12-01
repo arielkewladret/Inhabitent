@@ -9,7 +9,7 @@
 
 .container {
   max-width: 1120px;
-  width: 75%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -46,11 +46,6 @@
 .fp-adventures-entry {
   width: 25%;
   // z-index: 1;
-}
-
-ul {
-  padding: 0;
-  float: right;
 }
 
 .fp-banner {
@@ -120,6 +115,18 @@ ul {
 //   }
 // }
 
-// .shop-items-grid {
-//   grid-template-columns: 1fr 1fr 1fr;
-// }
+// product single
+
+.single-product {
+  .product {
+    display: flex;
+  }
+}
+.left-col {
+  width: 50%;
+}
+
+.right-col {
+  width: 50%;
+  text-align: left;
+}

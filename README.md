@@ -1,4 +1,4 @@
-Outdoor lifestyle page for afforadable products that support an alternative outdoor lifestyle & adventure products.
+Outdoor lifestyle page for unique products that support an outdoor & adventure lifestyle.
 
 Custom multi-page WordPress mock-up theme with made custom plug-ins.
 

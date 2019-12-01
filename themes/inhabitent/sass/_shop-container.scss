@@ -1,6 +1,7 @@
 .shop-container {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   // border-top: 1px dotted #404040;
 }
 
@@ -10,19 +11,45 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   padding: 20px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  height: 1000px;
-  padding-top: 200px;
-  padding-bottom: 85px;
+  // height: 1000px;
+  // padding-top: 200px;
+  // padding-bottom: 85px;
   // border-top: 1px dotted #404040;
+
+  .product {
+    width: 100%;
+    height: 100%;
+    .product-img-wrap {
+      height: 300px;
+    }
+    .wp-post-image {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .product-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: black;
+      overflow: hidden;
+    }
+  }
+}
+
+.product-info::after {
+  content: '................................';
+  position: absolute;
 }
 
 article {
   margin: 0;
   padding: 0;
-  height: 100px;
-  width: 150px;
+  // hei 150px;
 
   // border: 1px solid #ddd;
 }
@@ -42,36 +69,47 @@ article {
   font-family: $font__body, sans-serif;
 }
 
+///targets the text
+
 .taxonomies-navigation {
   display: flex;
   justify-content: center;
   //   width: 1%;
   flex-direction: row;
-}
-
-ul {
-  font-size: 18px;
-  color: $font__body, sans-serif;
-  text-transform: uppercase;
-  font-family: $font__body;
-  text-decoration: none;
   list-style: none;
-}
+  text-decoration: none;
+  color: color;
 
-///targets the text
-
-.entry-header-shop {
   a {
-    color: black;
-    font-size: 12px;
-    font-family: $font__main, serif;
-    font-size: 1rem;
-    text-transform: capitalize;
+    // font-size: 18px;
+    font-family: $font__body, sans-serif;
+    text-transform: uppercase;
+    list-style: none;
+    color: $color__font-green;
+    font-size: 1.2rem;
+
+    .archive ul {
+      color: $color__text-screen;
+      text-shadow: none;
+      text-decoration: none;
+      list-style: none;
+    }
   }
 }
 
 .entry-title-shop {
-  margin: 0;
+  text-align: center;
+  a {
+    color: black;
+  }
+
+  // margin: 0;
+  padding: 0px;
+  // a {
+  //   &:hover {
+  //     color: black;
+  //     border: none;
+  //   }
 }
 
 .products-container {

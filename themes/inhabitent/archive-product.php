@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 /**
  * The template for displaying archive-products pages.
  *
@@ -11,13 +11,13 @@ get_header(); ?>
 	<main id="main" class="shop-container" role="main">
 
 
-	<h1 class="entry-title-shop">Shop Stuff></h1>
+	<h1 class="entry-title-shop">Shop Stuff</h1>
 	
 
 		 <?php if ( have_posts() ) : ?> 			
 
 
-		<div class="taxonomies-navigation">
+		<div class="taxonomies-navigation-list">
 		<?php 
 			$args = array(
 				'public'   => true,
@@ -31,9 +31,9 @@ get_header(); ?>
     			$terms = get_terms($taxonomy);
 				foreach ( $terms as $term) { ?>
 				
-					<ul>
-						<li>
-						<a href="<?php echo esc_url(get_term_link($term)); ?>"><?php echo $term->name; ?></a>
+				 <ul>
+						<li> 
+						<a class="taxonomies-navigation" href="<?php echo esc_url(get_term_link($term)); ?>"><?php echo $term->name; ?></a>
 						</li>
 					</ul>
 				<?php }}} ?>
@@ -43,15 +43,7 @@ get_header(); ?>
 
 	
 
-		<!-- <div class="products-container"> 
-				<h1 class="page-title">Shop Stuff</h1> 
-				<ul class="product-type-list">
-				<li><p><a href="">Do</a></p>
-				<li><p><a href="">Eat</a></p>
-				<li><p><a href="">Sleep</a></p>
-				<li><p><a href="">Wear</a></p></ul> 
-		</div>   -->
-</section>
+</section> 
 
 <main class="shop-container-grid">
 
@@ -71,7 +63,20 @@ get_header(); ?>
 		<?php if ( $shop_loop->have_posts() ) : ?>
 		<?php while ( $shop_loop->have_posts() ) : $shop_loop->the_post(); ?>
 			
-			<?php get_template_part( 'template-parts/content' ); ?>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<header class="entry-header-shop">
+				<?php if ( has_post_thumbnail() ) : ?>
+					<div class="product-img-wrap">
+						<?php the_post_thumbnail( 'large' ); ?>
+					</div>
+				<?php endif; ?>
+
+				<div class="product-info">
+					<?php the_title( sprintf( '<h2 class="entry-title-shop"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+					<div class="product-price">$<?php the_field('number'); ?></div>
+				</div>
+			</header><!-- .entry-header -->
+		</article><!-- #post-## -->
 
 		<?php endwhile; ?>
 
@@ -88,4 +93,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
- -->
+ 

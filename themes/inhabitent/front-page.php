@@ -80,7 +80,7 @@ if(is_page('About')){
 
 
 <section> 
-	<div class="container">
+	<div class="journal-container">
 
 <h2> Inhabitent Journal </h2> 
 <?php

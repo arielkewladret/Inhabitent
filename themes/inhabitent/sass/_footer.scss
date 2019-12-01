@@ -4,7 +4,7 @@
   flex-direction: column;
   height: 350px;
   display: flex;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
   flex-wrap: wrap;
   background: url('../../images/dark-wood@2x.png');
   background-size: contain;
@@ -30,25 +30,25 @@ h3 {
 }
 
 .footer-logo {
-  width: 33%;
+  // width: 33%;
   padding: 0px;
   display: flex;
 }
 
 .contact-container .days-of-operation {
-  padding-left: 10px;
+  padding-left: 0px;
   color: white;
   font-size: 18px;
-  width: 33%;
+  // width: 33%;
 }
 a {
   color: white;
 }
 
 .logo-block {
-  width: 20%;
-  margin-left: 20%;
-  margin-bottom: 9%;
+  // width: 20%;
+  // margin-left: 20%;
+  // margin-bottom: 9%;
 }
 span.days-of-operation {
   font-weight: bold;

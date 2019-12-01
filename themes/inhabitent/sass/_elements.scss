@@ -42,19 +42,19 @@ ol {
   margin: 0 0 $base__space-unit ($base__space-unit * 2);
 }
 
-ul {
-  list-style: disc;
-}
+// ul {
+//   list-style: disc;
+// }
 
-ol {
-  list-style: decimal;
-}
+// ol {
+//   list-style: decimal;
+// }
 
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: $base__space-unit;
-}
+// li > ul,
+// li > ol {
+//   margin-bottom: 0;
+//   margin-left: $base__space-unit;
+// }
 
 dt {
   font-weight: bold;
