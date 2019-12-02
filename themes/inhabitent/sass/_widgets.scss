@@ -29,6 +29,7 @@
   color: $color__font-green;
   text-decoration: none;
   display: inline;
+  text-align: left;
 }
 
 .widget-p-address {
@@ -36,10 +37,6 @@
 }
 
 /* Search widget. */
-
-.widget_search .search-submit {
-  // display: none;
-}
 
 .fa {
   color: $color__text-main;

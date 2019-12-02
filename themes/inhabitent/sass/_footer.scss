@@ -46,25 +46,125 @@ h3 {
 }
 
 .contact-container .days-of-operation {
+  padding-left: 0px;
+  color: white;
+  font-size: 18px;
+  // width: 33%;
+}
+a {
+  color: white;
+}
+
+span.days-of-operation {
+  font-weight: bold;
+}
+
+.fab ::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400px;
+  padding: 10px;
+}
+
+.social-links {
+  font-size: 1.25rem;
+  padding: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.footer-container {
+  flex-direction: row;
+}
+
+.social {
+  padding: 25px;
+  width: 10px;
+  padding: 0px;
+  display: inline-block;
+  color: white;
+  line-height: 2;
+  font-weight: 100;
+}
+
+.social li {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.social-text {
+  display: none;
+}
+
+.fab {
+  margin: 10px;
+}
+
+li:hover {
+  color: #e2574c;
+}
+.container {
+  font-family: $font__body, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+}
+.site-footer {
+  justify-content: space-between;
+  line-height: 1.5;
+  flex-direction: row;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  background: url('../../images/dark-wood@2x.png');
+  background-size: contain;
+  align-items: left;
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  padding: 3rem;
+}
+
+.footer-container {
+  color: white;
+}
+
+.footer-logo {
+  width: 225px;
+
+  img {
+    width: 285px;
+  }
+}
+
+h3 {
+  color: #d99054;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: $font__body, sans-serif;
+}
+
+.footer-logo {
+  padding: 0px;
+  display: flex;
+}
+
+.contact-container .days-of-operation {
   padding-left: 20px;
   color: white;
   font-size: 18px;
   padding: 20px;
-  // width: 33%;
 }
 .footer-text {
   color: white;
 }
 
 .hours {
-  padding: 20px;
+  padding: 0px;
 }
 
-.logo-block {
-  // width: 20%;
-  // margin-left: 20%;
-  // margin-bottom: 9%;
-}
 span.days-of-operation {
   font-weight: bold;
 }
@@ -108,19 +208,20 @@ span.days-of-operation {
 
 .fa {
   margin: 10px;
+  color: white;
 
   i {
     color: white;
   }
 }
 
-// .fa-envelope-footer {
-//   color: white;
-// }
+.fa-envelope-footer {
+  color: white;
+}
 
-// .fa-phone-footer {
-//   color: white;
-// }
+.fa-phone-footer {
+  color: white;
+}
 
 li:hover {
   color: #e2574c;
@@ -130,10 +231,5 @@ li:hover {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  padding: 20px;
+  padding: 10px;
 }
-// }
-
-// .footer-block {
-//   width: 25%;
-// }

@@ -11,7 +11,7 @@ get_header(); ?>
 	<main id="main" class="shop-container" role="main">
 
 
-	<h1 class="entry-title-shop">Shop Stuff</h1>
+	<!-- <h1 class="entry-title-shop">Shop Stuff</h1> -->
 	
 
 		 <?php if ( have_posts() ) : ?> 		

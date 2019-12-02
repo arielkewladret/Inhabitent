@@ -395,15 +395,61 @@ input[type='email'],
 input[type='url'],
 input[type='password'],
 input[type='search'] {
-  padding: 3px; }
+  padding: 3px;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left; }
 
 textarea {
   padding-left: 3px;
   width: 100%; }
 
+.wpcf7-form {
+  text-align: left;
+  padding: 100x; }
+
+.wpcf7-form-control {
+  background-color: #fff;
+  border: 1px solid #eee; }
+
+.wpcf7 {
+  font-size: 1em;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase;
+  color: #2f1339;
+  font-size: 0.9em;
+  margin-bottom: 1em; }
+  .wpcf7 .wpcf7-submit {
+    background-color: #248a83;
+    color: white;
+    font-size: 1em;
+    font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase;
+    padding: 0.75em 1.5em; }
+  .wpcf7 .wpcf7-textarea {
+    width: 100%;
+    max-width: 600px; }
+  .wpcf7 .wpcf7-submit {
+    background-color: #248a83;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase;
+    padding: 0.75em 1.5em; }
+
+.search-submit {
+  color: white; }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+  color: white; }
+
 .search-input {
   width: 0px;
-  display: none; }
+  display: none;
+  color: white; }
 
 .search-input.show {
   display: inline-block;
@@ -521,7 +567,8 @@ textarea {
 .widget_archive a {
   color: #248a83;
   text-decoration: none;
-  display: inline; }
+  display: inline;
+  text-align: left; }
 
 .widget-p-address {
   color: #404040; }
@@ -582,15 +629,12 @@ strong {
   margin-bottom: 1.5rem;
   font-family: 'Novecento Sans Web';
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   letter-spacing: 2px; }
   strong p {
     color: black;
     margin-left: auto;
     margin-right: auto;
-    text-align: left; }
+    text-align: center; }
 
 .fp-banner {
   -o-object-fit: cover;
@@ -711,11 +755,6 @@ object {
       overflow: hidden;
       text-decoration: none; }
 
-.product-info::after {
-  content: '................................';
-  position: absolute;
-  overflow: hidden; }
-
 article {
   margin: 0;
   padding: 0; }
@@ -806,6 +845,17 @@ h2.entry-shop-item {
   border-left: 1px solid #c8c8c8;
   border-right: 1px solid #c8c8c8;
   border-top: 0px solid #c8c8c8; }
+
+h1.page-title {
+  font-size: 2.4rem;
+  margin: 0.67em 0;
+  text-align: center;
+  font-family: "Novecento Sans Web", sans-serif;
+  text-transform: uppercase;
+  color: #404040; }
+
+.taxonomy-description {
+  text-align: center; }
 
 .container {
   max-width: 1120px;
@@ -1207,7 +1257,8 @@ h3 {
 
 .hfeed .site-header {
   width: 100%;
-  height: 80px; }
+  height: 80px;
+  color: #248a83; }
   .hfeed .site-header.grey {
     background-color: rgba(0, 0, 0, 0.5); }
     .hfeed .site-header.grey nav ul li a {
@@ -1236,15 +1287,18 @@ h3 {
     .hfeed .site-header nav ul {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      color: #248a83; }
       .hfeed .site-header nav ul li {
         padding-right: 10px;
-        list-style: none; }
+        list-style: none;
+        color: #248a83; }
         .hfeed .site-header nav ul li a {
           color: #248a83;
           text-decoration: none; }
           .hfeed .site-header nav ul li a:visited {
-            color: #fff; }
+            color: #248a83;
+            border: none; }
 
 .mini-logo {
   height: 70px;
@@ -1349,6 +1403,110 @@ h3 {
   display: flex; }
 
 .contact-container .days-of-operation {
+  padding-left: 0px;
+  color: white;
+  font-size: 18px; }
+
+a {
+  color: white; }
+
+span.days-of-operation {
+  font-weight: bold; }
+
+.fab ::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400px;
+  padding: 10px; }
+
+.social-links {
+  font-size: 1.25rem;
+  padding: 0px;
+  margin-left: 0px;
+  padding-left: 0px; }
+
+.footer-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.social {
+  padding: 25px;
+  width: 10px;
+  padding: 0px;
+  display: inline-block;
+  color: white;
+  line-height: 2;
+  font-weight: 100; }
+
+.social li {
+  white-space: nowrap;
+  display: inline-block; }
+
+.social-text {
+  display: none; }
+
+.fab {
+  margin: 10px; }
+
+li:hover {
+  color: #e2574c; }
+
+.container {
+  font-family: "Novecento Sans Web", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px; }
+
+.site-footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 1.5;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: url("../../images/dark-wood@2x.png");
+  background-size: contain;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  color: white;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  padding: 3rem; }
+
+.footer-container {
+  color: white; }
+
+.footer-logo {
+  width: 225px; }
+  .footer-logo img {
+    width: 285px; }
+
+h3 {
+  color: #d99054;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", sans-serif; }
+
+.footer-logo {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contact-container .days-of-operation {
   padding-left: 20px;
   color: white;
   font-size: 18px;
@@ -1358,7 +1516,7 @@ h3 {
   color: white; }
 
 .hours {
-  padding: 20px; }
+  padding: 0px; }
 
 span.days-of-operation {
   font-weight: bold; }
@@ -1398,9 +1556,16 @@ span.days-of-operation {
   display: none; }
 
 .fa {
-  margin: 10px; }
+  margin: 10px;
+  color: white; }
   .fa i {
     color: white; }
+
+.fa-envelope-footer {
+  color: white; }
+
+.fa-phone-footer {
+  color: white; }
 
 li:hover {
   color: #e2574c; }
@@ -1410,7 +1575,7 @@ li:hover {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  padding: 20px; }
+  padding: 10px; }
 
 html {
   --base-spacing: 1.5rem; }

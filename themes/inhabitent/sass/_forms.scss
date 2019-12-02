@@ -74,9 +74,52 @@ input[type='url'],
 input[type='password'],
 input[type='search'] {
   padding: 3px;
+  align-items: left;
 }
 
 textarea {
   padding-left: 3px;
   width: 100%;
+}
+
+.wpcf7-form {
+  text-align: left;
+  padding: 100x;
+}
+
+.wpcf7-form-control {
+  background-color: $color__background-body;
+  border: 1px solid $color__background-pre;
+}
+
+.wpcf7 {
+  font-size: 1em;
+  font-family: $font__body, sans-serif;
+  text-transform: uppercase;
+  color: #2f1339;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+
+  .wpcf7-submit {
+    background-color: $color__font-green;
+    color: white;
+    font-size: 1em;
+    font-family: $font__body, sans-serif;
+    text-transform: uppercase;
+    padding: 0.75em 1.5em;
+  }
+
+  .wpcf7-textarea {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .wpcf7-submit {
+    background-color: $color__font-green;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase;
+    padding: 0.75em 1.5em;
+  }
 }

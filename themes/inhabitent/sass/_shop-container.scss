@@ -48,11 +48,11 @@
   }
 }
 
-.product-info::after {
-  content: '................................';
-  position: absolute;
-  overflow: hidden;
-}
+// .product-info::after {
+//   content: ' ....................';
+//   // position: center;
+//   overflow: hidden;
+// }
 
 article {
   margin: 0;
@@ -158,3 +158,21 @@ h2.entry-shop-item {
   border-right: 1px solid #c8c8c8;
   border-top: 0px solid #c8c8c8;
 }
+
+/////single taxonomy page
+
+h1.page-title {
+  font-size: 2.4rem;
+  margin: 0.67em 0;
+  text-align: center;
+  font-family: $font__body, sans-serif;
+  text-transform: uppercase;
+  color: $color__text-main;
+}
+
+.taxonomy-description {
+  text-align: center;
+}
+
+// .shop-container-grid .small {
+// }

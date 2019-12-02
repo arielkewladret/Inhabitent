@@ -8,6 +8,7 @@
     width: 100%;
     // position: fixed;
     height: 80px;
+    color: $color__font-green;
 
     &.grey {
       background-color: rgba(0, 0, 0, 0.5);
@@ -21,8 +22,7 @@
 
     .site-branding {
       margin-left: 20px;
-      a {
-      } // a
+      // a
     } // .site-branding
 
     .nav-menu {
@@ -41,15 +41,19 @@
       margin-top: 10px;
       ul {
         display: flex;
+        color: $color__font-green;
 
         li {
           padding-right: 10px;
           list-style: none;
+          color: $color__font-green;
+
           a {
             color: $color__font-green;
             text-decoration: none;
             &:visited {
-              color: $color__background-body;
+              color: $color__font-green;
+              border: none;
             }
           }
         }

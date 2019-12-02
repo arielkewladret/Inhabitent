@@ -128,9 +128,21 @@
 //   width: 50%;
 // }
 
+.search-submit {
+  color: white;
+}
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+  color: white;
+}
+
 .search-input {
   width: 0px;
   display: none;
+  color: white;
 }
 
 .search-input.show {
