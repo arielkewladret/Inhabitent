@@ -12,11 +12,11 @@
   grid-template-rows: repeat(4, 1fr);
   padding: 20px;
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
   // height: 1000px;
-  // padding-top: 200px;
+  padding-top: 60px;
   // padding-bottom: 85px;
-  // border-top: 1px dotted #404040;
+  border-top: 1px dashed #c8c8c8;
 
   &.small {
     grid-template-rows: 1fr;
@@ -27,6 +27,8 @@
     height: 100%;
     .product-img-wrap {
       height: 300px;
+      // padding: 10px;
+      border-bottom: 4px solid #c8c8c8;
     }
     .wp-post-image {
       object-fit: cover;
@@ -41,6 +43,7 @@
       align-items: center;
       color: black;
       overflow: hidden;
+      text-decoration: none;
     }
   }
 }
@@ -48,6 +51,7 @@
 .product-info::after {
   content: '................................';
   position: absolute;
+  overflow: hidden;
 }
 
 article {
@@ -100,6 +104,7 @@ article {
       &:hover {
         color: black;
         border: none;
+        text-decoration: none;
       }
 
       .archive ul {
@@ -119,19 +124,37 @@ article {
     color: black;
   }
 
-  .wp-post-image {
-    // border: 1px solid #ddd;
-  }
-
   .entry-header-shop .wp-post-image {
     height: 200px;
     border-bottom: 2px solid #e1e1e1;
     padding: 20px;
     height: 100px;
     margin: 5px;
+    text-decoration-line: none;
   }
 }
 
-// .entry-shop-item {
-//   color: red;
-// }
+h2.entry-shop-item {
+  display: inline;
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: $font__main, serif;
+  line-height: 1.75;
+  padding-right: 0.25rem;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.entry-shop-item a {
+  text-decoration: none;
+  z-index: 9999;
+}
+
+.entry-header-shop {
+  // padding: 10px;
+  padding-top: 1px;
+  border-bottom: 1px solid #c8c8c8;
+  border-left: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+  border-top: 0px solid #c8c8c8;
+}

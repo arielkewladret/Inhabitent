@@ -34,10 +34,10 @@ content-area .sticky {
 
 // /* Asides */
 
-// .blog .format-aside .entry-title,
-// .archive .format-aside .entry-title {
-//   display: none;
-// }
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none;
+}
 
 /* Comments */
 
@@ -55,9 +55,9 @@ main {
     background-repeat: no-repeat;
     height: 207vh;
   }
-  // article {
-  //   text-align: center;
-  // }
+  article {
+    text-align: center;
+  }
 }
 
 strong {

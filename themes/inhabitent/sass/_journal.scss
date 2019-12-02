@@ -1,8 +1,8 @@
 // .entry-title {
 //   position: absolute;
-//   top: 20px;
-//   left: 10px;
-//   a {
+//   // top: 20px;
+//   // left: 10px;
+//   h2 {
 //     text-decoration: none;
 //     background-color: #248a83;
 //     color: #fff;
@@ -10,76 +10,105 @@
 //     left: 0;
 //     // padding: ;
 //     position: absolute;
-//     margin-top: 2.25rem;
+//     margin-top: 0;
 //   }
 //   img {
 //     height: auto;
 //     max-width: 100%;
 //   }
 // }
-// .entry-meta {
-//   position: absolute;
-//   bottom: 0;
-//   right: 0;
-//   color: white;
+
+// h2.entry-title-shop {
+//   text-decoration: none;
+//   background-color: #248a83;
+//   color: #fff;
+//   font-size: 1.5rem;
+//   // position: absolute;
+//   margin-top: 2.25rem;
+//   padding: 0.75rem 1.5rem;
+//   position: relative;
+//   margin-top: 2.25rem;
+//   max-width: 75%;
+//   top: 0;
+//   font-family: $font__body;
 // }
 
+.entry-meta {
+  position: absolute;
+  // bottom: 0;
+  // right: 0;
+  color: white;
+}
+
+.fp-adventures-blog-tag {
+  color: white;
+}
+
 .entry-content p {
-  color: black;
+  color: $font__body;
+  font-size: 1rem;
+}
+
+.blog .entry-header .entry-meta,
+.blog .entry-header .entry-title {
+  position: absolute;
+  background: #248a83;
+  padding: 10px;
+  // margin: 0px;
+  color: #fff;
+  padding-top: inherit;
 }
 
 .blog {
   text-align: left;
   .site-content {
     max-width: 1120px;
-    margin: auto;
+    margin: 80px;
   }
   .entry-header {
     position: relative;
     .entry-title {
       position: absolute;
-      top: 0;
-      left: 0;
       background: $color__font-green;
       color: white;
     }
     .entry-meta {
       position: absolute;
       bottom: 10px;
+      overflow: hidden;
       right: 0;
+      // top: 0;
       background: $color__font-green;
       color: white;
     }
     img {
       object-fit: cover;
-      width: 100%;
-      height: 100%;
+      // width: 100%;
+      // height: 100%;
     }
   }
 }
 
 // journal templates
 
-// .entry-title {
-//   // position: absolute;
-//   top: 0px;
-//   left: 0px;
+.entry-title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: left;
 
-//   a {
-//     text-decoration: none;
-//     background-color: transparent;
-//     color: white;
-//     font-size: 2.1rem;
-//     left: 0;
-//     // padding: ;
-//     // position: absolute;
-//     // margin-top: 2.25rem;
-//   }
-//   img {
-//     height: auto;
-//     max-width: 100%;
-//   }
-// }
+  a {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    left: 0;
+  }
+  img {
+    height: auto;
+    max-width: 80%;
+  }
+}
 
 // entry-header-journal
 

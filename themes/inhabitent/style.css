@@ -82,9 +82,6 @@ audio:not([controls]) {
 template {
   display: none; }
 
-a {
-  background-color: transparent; }
-
 a:active,
 a:hover {
   outline: 0; }
@@ -164,9 +161,9 @@ select {
   text-transform: none; }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
   cursor: pointer; }
 
@@ -182,23 +179,23 @@ input::-moz-focus-inner {
 input {
   line-height: normal; }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0; }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   height: auto; }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
           box-sizing: content-box; }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
@@ -521,6 +518,11 @@ textarea {
 .widget-p {
   color: #248a83; }
 
+.widget_archive a {
+  color: #248a83;
+  text-decoration: none;
+  display: inline; }
+
 .widget-p-address {
   color: #404040; }
 
@@ -554,6 +556,10 @@ content-area .sticky {
   clear: both;
   margin: 0 0 1.5rem; }
 
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none; }
+
 /* Comments */
 .comment-content a {
   word-wrap: break-word; }
@@ -566,6 +572,9 @@ main .fp-banner {
   background-size: cover;
   background-repeat: no-repeat;
   height: 207vh; }
+
+main article {
+  text-align: center; }
 
 strong {
   color: #2f1339;
@@ -670,14 +679,17 @@ object {
   grid-template-rows: repeat(4, 1fr);
   padding: 20px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 20px auto;
+  padding-top: 60px;
+  border-top: 1px dashed #c8c8c8; }
   .shop-container-grid.small {
     grid-template-rows: 1fr; }
   .shop-container-grid .product {
     width: 100%;
     height: 100%; }
     .shop-container-grid .product .product-img-wrap {
-      height: 300px; }
+      height: 300px;
+      border-bottom: 4px solid #c8c8c8; }
     .shop-container-grid .product .wp-post-image {
       -o-object-fit: cover;
          object-fit: cover;
@@ -696,11 +708,13 @@ object {
           -ms-flex-align: center;
               align-items: center;
       color: black;
-      overflow: hidden; }
+      overflow: hidden;
+      text-decoration: none; }
 
 .product-info::after {
   content: '................................';
-  position: absolute; }
+  position: absolute;
+  overflow: hidden; }
 
 article {
   margin: 0;
@@ -750,7 +764,8 @@ article {
     text-decoration: none; }
     .taxonomies-navigation-list a a:hover {
       color: black;
-      border: none; }
+      border: none;
+      text-decoration: none; }
     .taxonomies-navigation-list a a .archive ul {
       color: #21759b;
       text-shadow: none;
@@ -767,7 +782,30 @@ article {
     border-bottom: 2px solid #e1e1e1;
     padding: 20px;
     height: 100px;
-    margin: 5px; }
+    margin: 5px;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none; }
+
+h2.entry-shop-item {
+  display: inline;
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "Merriweather Web", serif;
+  line-height: 1.75;
+  padding-right: 0.25rem;
+  text-transform: none;
+  font-weight: 400; }
+
+.entry-shop-item a {
+  text-decoration: none;
+  z-index: 9999; }
+
+.entry-header-shop {
+  padding-top: 1px;
+  border-bottom: 1px solid #c8c8c8;
+  border-left: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+  border-top: 0px solid #c8c8c8; }
 
 .container {
   max-width: 1120px;
@@ -852,33 +890,61 @@ article {
   padding-left: 75px;
   padding-top: 55px; }
 
+.entry-meta {
+  position: absolute;
+  color: white; }
+
+.fp-adventures-blog-tag {
+  color: white; }
+
 .entry-content p {
-  color: black; }
+  color: "Novecento Sans Web";
+  font-size: 1rem; }
+
+.blog .entry-header .entry-meta,
+.blog .entry-header .entry-title {
+  position: absolute;
+  background: #248a83;
+  padding: 10px;
+  color: #fff;
+  padding-top: inherit; }
 
 .blog {
   text-align: left; }
   .blog .site-content {
     max-width: 1120px;
-    margin: auto; }
+    margin: 80px; }
   .blog .entry-header {
     position: relative; }
     .blog .entry-header .entry-title {
       position: absolute;
-      top: 0;
-      left: 0;
       background: #248a83;
       color: white; }
     .blog .entry-header .entry-meta {
       position: absolute;
       bottom: 10px;
+      overflow: hidden;
       right: 0;
       background: #248a83;
       color: white; }
     .blog .entry-header img {
       -o-object-fit: cover;
-         object-fit: cover;
-      width: 100%;
-      height: 100%; }
+         object-fit: cover; }
+
+.entry-title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: left; }
+  .entry-title a {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    left: 0; }
+  .entry-title img {
+    height: auto;
+    max-width: 80%; }
 
 .banner-image img {
   width: 100%; }
@@ -937,19 +1003,32 @@ article {
 .adventures-section {
   margin: 50px; }
 
-.fp-adventures-blog-tag {
+.fp-adventures-blog {
   position: relative;
   top: 0;
-  color: #fff;
+  color: white;
   font-family: "Merriweather Web", serif;
   font-weight: 400;
   font-size: 1.5;
   text-transform: none; }
-  .fp-adventures-blog-tag a {
-    color: #fff; }
-    .fp-adventures-blog-tag a:hover {
+  .fp-adventures-blog a {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: flex-start;
+            flex-direction: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: "Novecento Sans Web";
+    color: white;
+    text-decoration: none; }
+    .fp-adventures-blog a:hover {
       color: #fff9c0; }
-  .fp-adventures-blog-tag:hover {
+  .fp-adventures-blog:hover {
     color: #fff9c0;
     outline: 0; }
 
@@ -1061,7 +1140,11 @@ article {
 
 .adventure-button-container {
   padding-left: 30px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  border: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; }
 
 .fp-term-link {
   position: relative;
@@ -1086,7 +1169,7 @@ article {
     background: #19625d;
     outline: 0; }
 
-h2 {
+h2.front-page-title {
   margin-top: 1em;
   font-weight: 400;
   font-size: 2em;
@@ -1161,7 +1244,7 @@ h3 {
           color: #248a83;
           text-decoration: none; }
           .hfeed .site-header nav ul li a:visited {
-            color: #248a83; }
+            color: #fff; }
 
 .mini-logo {
   height: 70px;
@@ -1207,6 +1290,9 @@ h3 {
 .entry-content {
   font-size: 1.5rem;
   font-weight: 300; }
+
+.about-container {
+  width: 70%; }
 
 .entry-title-about {
   color: white;
@@ -1263,12 +1349,16 @@ h3 {
   display: flex; }
 
 .contact-container .days-of-operation {
-  padding-left: 0px;
+  padding-left: 20px;
   color: white;
-  font-size: 18px; }
+  font-size: 18px;
+  padding: 20px; }
 
-a {
+.footer-text {
   color: white; }
+
+.hours {
+  padding: 20px; }
 
 span.days-of-operation {
   font-weight: bold; }
@@ -1276,7 +1366,8 @@ span.days-of-operation {
 .fab ::before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 400px;
-  padding: 10px; }
+  padding: 10px;
+  color: white; }
 
 .social-links {
   font-size: 1.25rem;
@@ -1306,8 +1397,10 @@ span.days-of-operation {
 .social-text {
   display: none; }
 
-.fab {
+.fa {
   margin: 10px; }
+  .fa i {
+    color: white; }
 
 li:hover {
   color: #e2574c; }
@@ -1317,7 +1410,7 @@ li:hover {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  padding: 10px; }
+  padding: 20px; }
 
 html {
   --base-spacing: 1.5rem; }

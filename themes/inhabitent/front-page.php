@@ -42,7 +42,7 @@ if(is_page('About')){
 }
 ?> -->
 
-<h2> Shop Stuff</h2> 
+<h2 class="front-page-title"> Shop Stuff</h2> 
 
 <section>
 	<div class="shop-container">
@@ -82,7 +82,7 @@ if(is_page('About')){
 <section> 
 	<div class="journal-container">
 
-<h2> Inhabitent Journal </h2> 
+<h2 class="front-page-title"> Inhabitent Journal </h2> 
 <?php
 $args = array( 'post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => 3);
 $journal_posts = get_posts( $args ); // returns an array of posts
@@ -117,7 +117,7 @@ $journal_posts = get_posts( $args ); // returns an array of posts
 
 <section class="adventures-section"> 
 
-<h2> Latest Adventures </h2> 
+<h2 class="front-page-title"> Latest Adventures </h2> 
 
 <?php
 $args = array( 'post_type' => 'adventures', 'order' => 'ASC', 'posts_per_page' => 4);
@@ -139,9 +139,9 @@ $adventures_posts = get_posts( $args ); // returns an array of posts
 			<!-- //the title  -->
 
 			<div class="fp-adventures-blog-tag">
-				<a class="fp-adventures-blog" href="<?php echo get_the_permalink(); ?>">
+				<h3 class="fp-adventures-blog" href="<?php echo get_the_permalink(); ?>">
 					<?php the_title();?>
-				</a>
+		</h3>
 		</div>
 
 			<a class="fp-adventures-blog" href="<?php echo get_the_permalink(); ?>">Read More</a>

@@ -15,12 +15,12 @@
 							<h3>Contact Info</h3>
 							<p>
 							<i class="fa fa-envelope"></i>
-							<a href="mailto:info@inhabitent.com">
+							<a class="footer-text" href="mailto:info@inhabitent.com">
 							info@inhabitent.com</a>
 							</p>
 							<p>
 							<i class="fa fa-phone"></i>
-							<a href="tel:">778-456-7891</a> 
+							<a class="footer-text" href="tel:">778-456-7891</a> 
 							</p>  
 							<span class="social-links">
 							<p><i class="fab fa-facebook-square"></i>		
