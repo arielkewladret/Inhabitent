@@ -50,17 +50,22 @@ input[type='text'],
 input[type='email'],
 input[type='url'],
 input[type='password'],
-input[type='search'],
 textarea {
-  // color: #666;
-  // border: 1px solid #ccc;
-  // border-radius: 3px;
-  border: none;
-  background-color: transparent;
-  color: white;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 
   &:focus {
   }
+}
+
+input[type='search'] {
+  border: none;
+}
+
+.grey input[type='search'] {
+  background-color: transparent;
+  color: white;
 }
 
 input[type='text'],

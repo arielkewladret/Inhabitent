@@ -14,7 +14,6 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(). '/style.css' ?>">
 
-
 	<?php wp_head(); ?>
 
 	</head>
@@ -23,7 +22,7 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" class="site-header <?php if (is_front_page() || is_page('about')) echo 'grey'; ?>" role="banner">
 				<div class="container">
 					<div class="site-header-navigation">
 						<div class="site-branding">

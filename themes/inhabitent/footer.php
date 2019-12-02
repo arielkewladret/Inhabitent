@@ -36,6 +36,7 @@
 									<p>
 									<span class="days-of-operation">Monday-Friday:
 									</span> 9am-5pm </p>
+									<p>
 									<span class="days-of-operation">Saturday:</span>
 									10am-2pm</p>
 									<p><span class="days-of-operation">Sunday:</span> Closed</p></div>

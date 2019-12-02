@@ -8,7 +8,16 @@
     width: 100%;
     // position: fixed;
     height: 80px;
-    background-color: rgba(0, 0, 0, 0.5);
+
+    &.grey {
+      background-color: rgba(0, 0, 0, 0.5);
+      nav ul li a {
+        color: $color__background-body;
+        &:visited {
+          color: $color__background-body;
+        }
+      }
+    }
 
     .site-branding {
       margin-left: 20px;
@@ -37,10 +46,10 @@
           padding-right: 10px;
           list-style: none;
           a {
-            color: $color__background-body;
+            color: $color__font-green;
             text-decoration: none;
             &:visited {
-              color: $color__background-body;
+              color: $color__font-green;
             }
           }
         }

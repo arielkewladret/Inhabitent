@@ -3,8 +3,9 @@
 --------------------------------------------------------------*/
 
 .widget {
-  margin: 0 0 $base__space-unit;
-  border-left: $color__background-pre 1px dotted;
+  border-left: $color__background-pre 3px dotted;
+  margin: $base__space-unit;
+  padding: 10px;
 
   /* Make sure select elements fit in widgets. */
   select {
@@ -12,8 +13,28 @@
   }
 }
 
+.widget-title {
+  color: #2f1339;
+  font-size: $base__space-unit;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.widget-p {
+  color: $color__font-green;
+}
+
+.widget-p-address {
+  color: $color__text-main;
+}
+
 /* Search widget. */
 
 .widget_search .search-submit {
   // display: none;
+}
+
+.fa {
+  color: $color__text-main;
 }
