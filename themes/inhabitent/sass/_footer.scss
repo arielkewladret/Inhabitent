@@ -45,18 +45,20 @@ h3 {
   display: flex;
 }
 
-.contact-container .days-of-operation {
+.contact-container .days-of-operation-footer {
   padding-left: 0px;
   color: white;
   font-size: 18px;
+  font-weight: bold;
+
   // width: 33%;
 }
 a {
   color: white;
 }
 
-span.days-of-operation {
-  font-weight: bold;
+.contact-container-footer {
+  color: white;
 }
 
 .fab ::before {
@@ -65,7 +67,7 @@ span.days-of-operation {
   padding: 10px;
 }
 
-.social-links {
+.social-links-footer {
   font-size: 1.25rem;
   padding: 0px;
   margin-left: 0px;
@@ -208,11 +210,7 @@ span.days-of-operation {
 
 .fa {
   margin: 10px;
-  color: white;
-
-  i {
-    color: white;
-  }
+  color: $color__text-main;
 }
 
 .fa-envelope-footer {

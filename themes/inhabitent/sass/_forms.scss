@@ -39,8 +39,6 @@ input[type='submit'] {
   &:active,
   &:focus {
     border-color: transparent;
-    // box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5),
-    //   inset 0 2px 5px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -84,7 +82,7 @@ textarea {
 
 .wpcf7-form {
   text-align: left;
-  padding: 100x;
+  margin: 80px;
 }
 
 .wpcf7-form-control {
@@ -113,13 +111,26 @@ textarea {
     width: 100%;
     max-width: 600px;
   }
+}
 
-  .wpcf7-submit {
-    background-color: $color__font-green;
-    color: #ffffff;
-    font-size: 0.9em;
-    font-family: Novecento Sans Web, sans-serif;
-    text-transform: uppercase;
-    padding: 0.75em 1.5em;
+.search-form {
+}
+
+.error404 {
+  .content-area {
+    display: flex;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+
+// .search-form {
+//   background-color: transparent;
+//   color: white;
+//   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5),
+//     inset 0 2px 5px rgba(0, 0, 0, 0.15);
+//   border: 1px solid;
+//   // width: 80px;
+//   // height: 80px;
+// }

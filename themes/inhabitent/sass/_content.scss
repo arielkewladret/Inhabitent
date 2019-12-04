@@ -8,10 +8,6 @@ content-area .sticky {
   display: block;
 }
 
-.hentry {
-  margin: 0 0 $base__space-unit;
-}
-
 .updated:not(.published) {
   display: none;
 }
@@ -65,18 +61,16 @@ strong {
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
   font-family: 'Novecento Sans Web';
-  text-align: center;
+  text-align: left;
   letter-spacing: 2px;
 
   p {
     color: black;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: left;
   }
 }
-
-// **** why isn't this working
 
 .fp-banner {
   object-fit: cover;

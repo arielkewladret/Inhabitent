@@ -35,8 +35,6 @@
 
 .entry-meta {
   position: absolute;
-  // bottom: 0;
-  // right: 0;
   color: white;
 }
 
@@ -47,6 +45,7 @@
 .entry-content p {
   color: $font__body;
   font-size: 1rem;
+  text-align: left;
 }
 
 .blog .entry-header .entry-meta,
@@ -54,7 +53,6 @@
   position: absolute;
   background: #248a83;
   padding: 10px;
-  // margin: 0px;
   color: #fff;
   padding-top: inherit;
 }
@@ -75,9 +73,9 @@
     .entry-meta {
       position: absolute;
       bottom: 10px;
-      overflow: hidden;
+      // overflow: hidden;
       right: 0;
-      // top: 0;
+      bottom: 0;
       background: $color__font-green;
       color: white;
     }
@@ -92,17 +90,20 @@
 // journal templates
 
 .entry-title {
-  position: absolute;
   top: 0px;
   left: 0px;
   text-align: left;
+  &:hover {
+    color: $color__background-ins;
+  }
 
   a {
     text-decoration: none;
+    // position: absolute;
     background-color: transparent;
     color: white;
     font-size: 2rem;
-    left: 0;
+    font-family: $font__body, sans-serif;
   }
   img {
     height: auto;

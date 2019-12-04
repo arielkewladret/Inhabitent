@@ -406,7 +406,7 @@ textarea {
 
 .wpcf7-form {
   text-align: left;
-  padding: 100x; }
+  margin: 80px; }
 
 .wpcf7-form-control {
   background-color: #fff;
@@ -429,13 +429,14 @@ textarea {
   .wpcf7 .wpcf7-textarea {
     width: 100%;
     max-width: 600px; }
-  .wpcf7 .wpcf7-submit {
-    background-color: #248a83;
-    color: #ffffff;
-    font-size: 0.9em;
-    font-family: Novecento Sans Web, sans-serif;
-    text-transform: uppercase;
-    padding: 0.75em 1.5em; }
+
+.error404 .content-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .search-submit {
   color: white; }
@@ -559,7 +560,10 @@ textarea {
   font-size: 1.5rem;
   text-align: left;
   font-weight: bold;
-  line-height: 1.25; }
+  line-height: 1.25;
+  font-family: "Novecento Sans Web", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 .widget-p {
   color: #248a83; }
@@ -574,8 +578,12 @@ textarea {
   color: #404040; }
 
 /* Search widget. */
-.fa {
+.fas {
   color: #404040; }
+
+.days-of-operation {
+  color: #404040;
+  display: inline; }
 
 /*--------------------------------------------------------------
 # Content
@@ -583,9 +591,6 @@ textarea {
 /* Posts and pages */
 content-area .sticky {
   display: block; }
-
-.hentry {
-  margin: 0 0 1.5rem; }
 
 .updated:not(.published) {
   display: none; }
@@ -628,13 +633,13 @@ strong {
   font-size: 2.1rem;
   margin-bottom: 1.5rem;
   font-family: 'Novecento Sans Web';
-  text-align: center;
+  text-align: left;
   letter-spacing: 2px; }
   strong p {
     color: black;
     margin-left: auto;
     margin-right: auto;
-    text-align: center; }
+    text-align: left; }
 
 .fp-banner {
   -o-object-fit: cover;
@@ -859,9 +864,7 @@ h1.page-title {
 
 .container {
   max-width: 1120px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
+  width: 100%; }
 
 .container p {
   text-align: left;
@@ -930,15 +933,21 @@ h1.page-title {
   width: 50%;
   text-align: left; }
 
-.entry-title {
+h1.entry-title {
   font-family: "Novecento Sans Web", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #404040;
-  position: relative;
+  position: absolute;
   text-align: left;
-  padding-left: 75px;
+  padding-left: 152px;
   padding-top: 55px; }
+
+.widget_recent_entries {
+  border: none; }
+
+.widget_archive {
+  border: none; }
 
 .entry-meta {
   position: absolute;
@@ -949,7 +958,8 @@ h1.page-title {
 
 .entry-content p {
   color: "Novecento Sans Web";
-  font-size: 1rem; }
+  font-size: 1rem;
+  text-align: left; }
 
 .blog .entry-header .entry-meta,
 .blog .entry-header .entry-title {
@@ -973,8 +983,8 @@ h1.page-title {
     .blog .entry-header .entry-meta {
       position: absolute;
       bottom: 10px;
-      overflow: hidden;
       right: 0;
+      bottom: 0;
       background: #248a83;
       color: white; }
     .blog .entry-header img {
@@ -982,16 +992,17 @@ h1.page-title {
          object-fit: cover; }
 
 .entry-title {
-  position: absolute;
   top: 0px;
   left: 0px;
   text-align: left; }
+  .entry-title:hover {
+    color: #fff9c0; }
   .entry-title a {
     text-decoration: none;
     background-color: transparent;
     color: white;
     font-size: 2rem;
-    left: 0; }
+    font-family: "Novecento Sans Web", sans-serif; }
   .entry-title img {
     height: auto;
     max-width: 80%; }
@@ -1257,7 +1268,7 @@ h3 {
 
 .hfeed .site-header {
   width: 100%;
-  height: 80px;
+  height: 70px;
   color: #248a83; }
   .hfeed .site-header.grey {
     background-color: rgba(0, 0, 0, 0.5); }
@@ -1301,8 +1312,8 @@ h3 {
             border: none; }
 
 .mini-logo {
-  height: 70px;
-  width: 70px; }
+  height: 60px;
+  width: 60px; }
   .mini-logo--white {
     display: none; }
   .mini-logo--green {
@@ -1402,23 +1413,24 @@ h3 {
   display: -ms-flexbox;
   display: flex; }
 
-.contact-container .days-of-operation {
+.contact-container .days-of-operation-footer {
   padding-left: 0px;
   color: white;
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: bold; }
 
 a {
   color: white; }
 
-span.days-of-operation {
-  font-weight: bold; }
+.contact-container-footer {
+  color: white; }
 
 .fab ::before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 400px;
   padding: 10px; }
 
-.social-links {
+.social-links-footer {
   font-size: 1.25rem;
   padding: 0px;
   margin-left: 0px;
@@ -1557,9 +1569,7 @@ span.days-of-operation {
 
 .fa {
   margin: 10px;
-  color: white; }
-  .fa i {
-    color: white; }
+  color: #404040; }
 
 .fa-envelope-footer {
   color: white; }
@@ -1579,6 +1589,26 @@ li:hover {
 
 html {
   --base-spacing: 1.5rem; }
+
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .site-content .content-area {
+    width: 75%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .site-content .widget-area {
+    width: 25%; }
+
+.home .site-content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .home .site-content .content-area {
+    width: 100%; }
 
 .site-content {
   display: -webkit-box;

@@ -10,8 +10,8 @@
 .container {
   max-width: 1120px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 
 .container p {
@@ -81,14 +81,27 @@
 
 ////find us page
 
-.entry-title {
+h1.entry-title {
   // clear: both;
   font-family: $font__body, sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #404040;
-  position: relative;
+  position: absolute;
   text-align: left;
-  padding-left: 75px;
+  padding-left: 152px;
   padding-top: 55px;
+}
+
+/////404////
+
+.site-header-navigation {
+}
+
+.widget_recent_entries {
+  border: none;
+}
+
+.widget_archive {
+  border: none;
 }

@@ -19,7 +19,15 @@
   text-align: left;
   font-weight: bold;
   line-height: 1.25;
+  font-family: $font__body, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
+
+// .widget_custom_html {
+//   padding: 5%;
+//   width: 100%;
+// }
 
 .widget-p {
   color: $color__font-green;
@@ -38,6 +46,11 @@
 
 /* Search widget. */
 
-.fa {
+.fas {
   color: $color__text-main;
+}
+
+.days-of-operation {
+  color: $color__text-main;
+  display: inline;
 }

@@ -1,5 +1,7 @@
 // basic layout across the board
 
+// basic layout across the board
+
 // body {
 //   width: 1120px;
 //   margin: 20px;
@@ -17,6 +19,66 @@
 //   max-width: 100%;
 //   text-align: center;
 // }
+
+// .content-area-container {
+//     width: 50% ;
+// }
+
+// .content-area {
+//     display: flex;
+// }
+
+// .site-content {
+//   width: 1120px;
+//   // margin: 70px;
+//   max-width: 100%;
+//   height: 100%;
+//   padding: 0px;
+
+// header {
+//   color: #404040;
+//   text-transform: uppercase;
+//   font-family: $font__body, sans-serif;
+// }
+
+// .site-header {
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: center;
+//     //   position: fixed;
+//     //   flex-direction: flex-end;
+//     width: 100%;
+//     z-index: 3;
+//     border-bottom: 0;
+//     position: fixed;
+//     border-bottom: 1px solid #e1e1e1;
+
+//     h2 {
+//         color: #2f1339;
+//     }
+
+// h1 .page-title {
+// }
+
+.site-content {
+  display: flex;
+  .content-area {
+    width: 75%;
+    flex-grow: 1;
+  }
+  .widget-area {
+    width: 25%;
+  }
+}
+
+.home {
+  .site-content {
+    flex-direction: column;
+    .content-area {
+      width: 100%;
+    }
+  }
+}
 
 // .content-area-container {
 //     width: 50% ;

@@ -1,41 +1,66 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The main template file.
  *
  * @package RED_Starter_Theme
  */
-
 get_header(); ?>
 
+<div class="content-main">
+
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+			<?php if (have_posts()) : ?>
 
+			<?php if (is_home() && !is_front_page()) : ?>
+				<header>
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+				</header>
+			<?php endif; ?>
 
-			<?php get_template_part( 'template-parts/content', 'blog-single' ); ?>
+            <section class="journal-section-wrapper">
 
-			<?php endwhile; ?>
+            <div id="secondary" class="widget-area">
+                <?php get_sidebar(); ?>
+            </div> 
 
+                <div class="journal-section">   
+            
+                    <?php /* Start the Loop */ ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                    
+                    <div class="journal-single-post">
+                        <?php get_template_part('template-parts/content', 'blog'); ?>
 
-			<?php the_post_navigation(); ?>
+                        <div class="social-media-btn">
+                            <button class="social-btn"><i class="fab fa-facebook-f"></i> Like</button>
+                            <button class="social-btn"><i class="fab fa-twitter"></i> Tweet</button>
+                            <button class="social-btn"><i class="fab fa-pinterest"></i> Pin</button>
+                        </div>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+                    
+                    
+                    </div> 
 
+                    <?php endwhile; ?>
 
-			<div class="social-media-button">
-				<button class="social-button"><i class="fab fa-facebook"></i>Like</button>
-				<button class="social-button"><i class="fab fa-twitter"></i>Tweet</button>
-				<button class="social-button"><i class="fab fa-pinterest"></i>Pin</button>
-			</div>
+                    <?php the_posts_navigation(); ?>
+
+                    <?php else : ?>
+
+                        <?php get_template_part('template-parts/content', 'none'); ?>
+
+                    <?php endif; ?>
+
+            
+                </div> 
+
+            </section> 
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+</div>
+
 <?php get_footer(); ?>

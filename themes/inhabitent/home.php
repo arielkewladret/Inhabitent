@@ -12,14 +12,16 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
+
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+			<h2 class="page-title screen-reader-text"><?php single_post_title(); ?></h2>
+
 
 				<?php get_template_part( 'template-parts/content' ); ?>
 
@@ -33,9 +35,11 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+	<!-- get_comments_template( string $file = '/comments.php', bool $separate_comments = false ); ?> -->
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	
 <?php get_sidebar(); ?>
-
 <?php get_footer(); ?>

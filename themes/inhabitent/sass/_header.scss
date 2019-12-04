@@ -6,8 +6,7 @@
 .hfeed {
   .site-header {
     width: 100%;
-    // position: fixed;
-    height: 80px;
+    height: 70px;
     color: $color__font-green;
 
     &.grey {
@@ -64,8 +63,8 @@
 
 // Logo
 .mini-logo {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   &--white {
     display: none;
   }
