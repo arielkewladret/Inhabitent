@@ -351,6 +351,7 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
+  color: rgba(0, 0, 0, 0.8);
   font-size: 16px;
   font-size: 1rem;
   line-height: 2;
@@ -372,6 +373,14 @@ input[type='submit'] {
   input[type='submit']:active,
   input[type='submit']:focus {
     border-color: transparent; }
+
+.comments-area input[type='button'],
+.comments-area input[type='submit'] {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+  padding: 0.6rem 1rem 0.4rem; }
 
 /* Fields */
 input[type='text'],
@@ -460,7 +469,7 @@ textarea {
   -webkit-transition-delay: width 5s ease-in-out;
           transition-delay: width 5s ease-in-out; }
 
-.site-header {
+.grey.site-header {
   position: absolute;
   top: 0; }
 
@@ -864,7 +873,9 @@ h1.page-title {
 
 .container {
   max-width: 1120px;
-  width: 100%; }
+  width: 100%;
+  margin-left: 0 auto;
+  margin-right: 0 auto; }
 
 .container p {
   text-align: left;
@@ -949,6 +960,9 @@ h1.entry-title {
 .widget_archive {
   border: none; }
 
+.content-area-container {
+  width: 65%; }
+
 .entry-meta {
   position: absolute;
   color: white; }
@@ -977,7 +991,8 @@ h1.entry-title {
   .blog .entry-header {
     position: relative; }
     .blog .entry-header .entry-title {
-      position: absolute;
+      -o-object-fit: cover;
+         object-fit: cover;
       background: #248a83;
       color: white; }
     .blog .entry-header .entry-meta {
@@ -989,7 +1004,9 @@ h1.entry-title {
       color: white; }
     .blog .entry-header img {
       -o-object-fit: cover;
-         object-fit: cover; }
+         object-fit: cover;
+      min-width: 100%;
+      min-height: 100%; }
 
 .entry-title {
   top: 0px;
@@ -1567,7 +1584,7 @@ span.days-of-operation {
 .social-text {
   display: none; }
 
-.fa {
+.widget-area .fa {
   margin: 10px;
   color: #404040; }
 

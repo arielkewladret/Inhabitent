@@ -6,8 +6,6 @@
  */
 get_header(); ?>
 
-<div class="content-main">
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -18,14 +16,6 @@ get_header(); ?>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
-
-            <section class="journal-section-wrapper">
-
-            <div id="secondary" class="widget-area">
-                <?php get_sidebar(); ?>
-            </div> 
-
-                <div class="journal-section">   
             
                     <?php /* Start the Loop */ ?>
                     <?php while (have_posts()) : the_post(); ?>
@@ -38,8 +28,6 @@ get_header(); ?>
                             <button class="social-btn"><i class="fab fa-twitter"></i> Tweet</button>
                             <button class="social-btn"><i class="fab fa-pinterest"></i> Pin</button>
                         </div>
-
-                    
                     
                     </div> 
 
@@ -53,14 +41,10 @@ get_header(); ?>
 
                     <?php endif; ?>
 
-            
-                </div> 
-
-            </section> 
-
 		</main><!-- #main -->
-	</div><!-- #primary -->
-
-</div>
-
+    </div><!-- #primary -->
+    
+<!-- <div id="secondary" class="widget-area"> -->
+    <?php get_sidebar(); ?>
+<!-- </div>  -->
 <?php get_footer(); ?>
