@@ -7,6 +7,12 @@
 //   // align-self: baseline;
 // }
 
+site-main {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 60%;
+}
+
 .container {
   max-width: 1120px;
   width: 100%;
@@ -15,16 +21,16 @@
 }
 
 .container p {
-  text-align: left;
+  // text-align: left;
   margin-right: auto;
   margin-left: auto;
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 5.5rem 0 0;
-}
+// .page-content,
+// .entry-content,
+// .entry-summary {
+//   margin: 5.5rem 0 0;
+// }
 
 .widget-area {
   width: 100%;
@@ -45,7 +51,7 @@
 
 .fp-adventures-entry {
   width: 25%;
-  // z-index: 1;
+  z-index: 1;
 }
 
 .fp-banner {

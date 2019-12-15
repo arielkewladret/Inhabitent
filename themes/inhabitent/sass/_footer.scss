@@ -21,6 +21,7 @@
 .footer-container {
   // align-items: center;
   color: white;
+  margin: 0 180px;
 }
 
 .footer-logo {
@@ -40,9 +41,11 @@ h3 {
 }
 
 .footer-logo {
-  // width: 33%;
-  padding: 0px;
-  display: flex;
+  height: 80px;
+  width: 80px;
+
+  padding: 20px;
+  margin-left: 60px;
 }
 
 .contact-container .days-of-operation-footer {
@@ -165,6 +168,7 @@ h3 {
 
 .hours {
   padding: 0px;
+  margin-right: 300px;
 }
 
 span.days-of-operation {

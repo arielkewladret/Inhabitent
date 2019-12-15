@@ -73,10 +73,10 @@
   margin: 50px;
 }
 
-.fp-adventures-blog {
-  position: relative;
-  top: 0;
-  color: white;
+.fp-adventures-blog-tag {
+  position: absolute;
+  // top: 0;
+  color: red;
   font-family: $font__main, serif;
   font-weight: 400;
   font-size: $font__line-height-body;
@@ -148,7 +148,7 @@
     letter-spacing: 2px;
     margin-bottom: 0.75rem;
     font-weight: 800;
-    // padding-left: 20px;
+    width: 100%;
 
     &:visited {
       color: $color__link-hover;

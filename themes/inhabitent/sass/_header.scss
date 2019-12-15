@@ -1,6 +1,11 @@
 .site-header-navigation {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+.menu-main-menu-container {
+  margin-right: 40px;
 }
 
 .hfeed {
@@ -8,9 +13,16 @@
     width: 100%;
     height: 70px;
     color: $color__font-green;
+    border-bottom: 1px solid lightgray;
 
     &.grey {
-      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100px;
+      background-color: transparent;
+      padding-top: 40px;
+      border-bottom: 1px solid transparent;
+      color: white;
+
       nav ul li a {
         color: $color__background-body;
         &:visited {
@@ -36,7 +48,6 @@
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      // margin-right: 20px;
       margin-top: 10px;
       ul {
         display: flex;
@@ -63,8 +74,9 @@
 
 // Logo
 .mini-logo {
-  height: 60px;
-  width: 60px;
+  height: 38%;
+  width: 100%;
+  padding-left: 40%;
   &--white {
     display: none;
   }

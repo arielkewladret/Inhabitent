@@ -301,7 +301,8 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff; }
+  background: #fff;
+  margin: 0 auto; }
 
 /* Fallback for when there is no custom background color defined. */
 blockquote,
@@ -379,8 +380,7 @@ input[type='submit'] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
-  background: #e6e6e6;
-  padding: 0.6rem 1rem 0.4rem; }
+  background: #e6e6e6; }
 
 /* Fields */
 input[type='text'],
@@ -393,7 +393,8 @@ textarea {
   border-radius: 3px; }
 
 input[type='search'] {
-  border: none; }
+  border: none;
+  color: black; }
 
 .grey input[type='search'] {
   background-color: transparent;
@@ -447,19 +448,24 @@ textarea {
   margin-left: auto;
   margin-right: auto; }
 
+button.search-button button {
+  color: #248a83; }
+  button.search-button button.grey {
+    color: white; }
+
 .search-submit {
-  color: white; }
+  color: #248a83; }
+  .search-submit.grey {
+    color: white; }
 
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 600;
-  color: white; }
-
-.search-input {
-  width: 0px;
-  display: none;
-  color: white; }
+  padding-right: 20px; }
+  .fa.grey button,
+  .fas.grey button {
+    color: white; }
 
 .search-input.show {
   display: inline-block;
@@ -471,7 +477,8 @@ textarea {
 
 .grey.site-header {
   position: absolute;
-  top: 0; }
+  top: 0;
+  color: white; }
 
 .search-input input {
   width: 0px;
@@ -529,28 +536,12 @@ textarea {
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5rem; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5rem; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
 .clearfix {
   clear: both;
-  content: "";
+  content: '';
   display: table; }
 
 /*--------------------------------------------------------------
@@ -611,7 +602,7 @@ content-area .sticky {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5rem 0 0; }
+  margin: 0 auto; }
 
 .page-links {
   clear: both;
@@ -871,6 +862,11 @@ h1.page-title {
 .taxonomy-description {
   text-align: center; }
 
+site-main {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 60%; }
+
 .container {
   max-width: 1120px;
   width: 100%;
@@ -878,14 +874,8 @@ h1.page-title {
   margin-right: 0 auto; }
 
 .container p {
-  text-align: left;
   margin-right: auto;
   margin-left: auto; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 5.5rem 0 0; }
 
 .widget-area {
   width: 100%; }
@@ -908,7 +898,8 @@ h1.page-title {
   display: flex; }
 
 .fp-adventures-entry {
-  width: 25%; }
+  width: 25%;
+  z-index: 1; }
 
 .fp-banner {
   background-size: cover, cover;
@@ -986,18 +977,15 @@ h1.entry-title {
 .blog {
   text-align: left; }
   .blog .site-content {
-    max-width: 1120px;
-    margin: 80px; }
+    max-width: 1440px; }
   .blog .entry-header {
     position: relative; }
     .blog .entry-header .entry-title {
-      -o-object-fit: cover;
-         object-fit: cover;
       background: #248a83;
-      color: white; }
+      color: white;
+      width: 80%; }
     .blog .entry-header .entry-meta {
       position: absolute;
-      bottom: 10px;
       right: 0;
       bottom: 0;
       background: #248a83;
@@ -1081,15 +1069,14 @@ h1.entry-title {
 .adventures-section {
   margin: 50px; }
 
-.fp-adventures-blog {
-  position: relative;
-  top: 0;
-  color: white;
+.fp-adventures-blog-tag {
+  position: absolute;
+  color: red;
   font-family: "Merriweather Web", serif;
   font-weight: 400;
   font-size: 1.5;
   text-transform: none; }
-  .fp-adventures-blog a {
+  .fp-adventures-blog-tag a {
     color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1104,9 +1091,9 @@ h1.entry-title {
     font-family: "Novecento Sans Web";
     color: white;
     text-decoration: none; }
-    .fp-adventures-blog a:hover {
+    .fp-adventures-blog-tag a:hover {
       color: #fff9c0; }
-  .fp-adventures-blog:hover {
+  .fp-adventures-blog-tag:hover {
     color: #fff9c0;
     outline: 0; }
 
@@ -1155,7 +1142,8 @@ h1.entry-title {
     text-align: left;
     letter-spacing: 2px;
     margin-bottom: 0.75rem;
-    font-weight: 800; }
+    font-weight: 800;
+    width: 100%; }
     .fp-journal-info-title:visited {
       color: midnightblue; }
   .fp-journal-info-btn {
@@ -1281,14 +1269,24 @@ h3 {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  position: relative; }
+
+.menu-main-menu-container {
+  margin-right: 40px; }
 
 .hfeed .site-header {
   width: 100%;
   height: 70px;
-  color: #248a83; }
+  color: #248a83;
+  border-bottom: 1px solid lightgray; }
   .hfeed .site-header.grey {
-    background-color: rgba(0, 0, 0, 0.5); }
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    padding-top: 40px;
+    border-bottom: 1px solid transparent;
+    color: white; }
     .hfeed .site-header.grey nav ul li a {
       color: #fff; }
       .hfeed .site-header.grey nav ul li a:visited {
@@ -1329,8 +1327,9 @@ h3 {
             border: none; }
 
 .mini-logo {
-  height: 60px;
-  width: 60px; }
+  height: 38%;
+  width: 100%;
+  padding-left: 40%; }
   .mini-logo--white {
     display: none; }
   .mini-logo--green {
@@ -1411,7 +1410,8 @@ h3 {
   padding: 3rem; }
 
 .footer-container {
-  color: white; }
+  color: white;
+  margin: 0 180px; }
 
 .footer-logo {
   width: 225px; }
@@ -1425,10 +1425,10 @@ h3 {
   font-family: "Novecento Sans Web", sans-serif; }
 
 .footer-logo {
-  padding: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  height: 80px;
+  width: 80px;
+  padding: 20px;
+  margin-left: 60px; }
 
 .contact-container .days-of-operation-footer {
   padding-left: 0px;
@@ -1545,7 +1545,8 @@ h3 {
   color: white; }
 
 .hours {
-  padding: 0px; }
+  padding: 0px;
+  margin-right: 300px; }
 
 span.days-of-operation {
   font-weight: bold; }

@@ -60,20 +60,19 @@
 .blog {
   text-align: left;
   .site-content {
-    max-width: 1120px;
-    margin: 80px;
+    max-width: 1440px;
+    // margin: 80px;
   }
   .entry-header {
     position: relative;
     .entry-title {
-      object-fit: cover;
       background: $color__font-green;
       color: white;
+      width: 80%;
     }
     .entry-meta {
       position: absolute;
-      bottom: 10px;
-      // overflow: hidden;
+
       right: 0;
       bottom: 0;
       background: $color__font-green;

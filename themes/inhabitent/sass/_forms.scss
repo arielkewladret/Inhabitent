@@ -48,7 +48,7 @@ input[type='submit'] {
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
-  padding: 0.6rem 1rem 0.4rem;
+  // padding: 0.6rem 1rem 0.4rem;
 }
 
 /* Fields */
@@ -68,6 +68,7 @@ textarea {
 
 input[type='search'] {
   border: none;
+  color: black;
 }
 
 .grey input[type='search'] {

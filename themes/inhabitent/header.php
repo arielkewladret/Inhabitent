@@ -23,7 +23,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header <?php if (is_front_page() || is_page('about')) echo 'grey'; ?>" role="banner">
-				<div class="container">
+				<div class="banner-container">
 					<div class="site-header-navigation">
 						<div class="site-branding">
 							<a href="/inhabitent"> 
