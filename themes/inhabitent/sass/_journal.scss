@@ -72,15 +72,14 @@
     }
     .entry-meta {
       position: absolute;
-
       right: 0;
       bottom: 0;
       background: $color__font-green;
       color: white;
     }
     img {
+      vertical-align: bottom;
       object-fit: cover;
-      // width: 850px;
       min-width: 100%;
       min-height: 100%;
     }
@@ -94,7 +93,6 @@
   left: 0px;
   text-align: left;
   &:hover {
-    color: $color__background-ins;
   }
 
   a {

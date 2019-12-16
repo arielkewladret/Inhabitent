@@ -32,6 +32,7 @@
 
   &-link {
     display: block;
+    width: 30% 30%;
   }
 }
 
@@ -63,23 +64,38 @@
   min-width: 100%;
 }
 
-.fp-adventures-entry img {
-  object-fit: cover;
-  min-height: 100%;
-  min-width: 100%;
+.fp-adventures-entry {
+  img {
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+  }
 }
 
 .adventures-section {
   margin: 50px;
 }
 
-.fp-adventures-blog-tag {
+// .fp-adventures-blog-tag {
+//   // position: absolute;
+//   // top: 0;
+//   // font-family: $font__main, serif;
+//   // font-weight: 400;
+//   // font-size: $font__line-height-body;
+//   // text-transform: none;
+
+// }
+img.fp-adventures-blog-tag {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+h3.fp-adventures-blog {
   position: absolute;
-  // top: 0;
-  color: red;
+  color: white;
+  top: 0;
   font-family: $font__main, serif;
-  font-weight: 400;
-  font-size: $font__line-height-body;
+  font-weight: 800;
+  font-size: 2em;
   text-transform: none;
 
   a {
@@ -89,7 +105,6 @@
     flex-direction: flex-start;
     justify-content: space-between;
     font-family: $font__body;
-    // padding: 50px;
     color: white;
     text-decoration: none;
     &:hover {
@@ -98,7 +113,7 @@
   }
 
   &:hover {
-    color: $color__background-ins;
+    // color: $color__background-ins;
     outline: 0;
   }
 }
@@ -123,12 +138,10 @@
 .fp-journal-info {
   display: flex;
   flex-direction: column;
-  padding: 10px;
 
   .fp-journal-info-btn {
     &:hover {
       color: white;
-      // border: white;
       text-decoration: none;
     }
   }
@@ -136,19 +149,19 @@
     color: $color__text-main;
     font-size: 0.75rem;
     font-family: $font__main;
-    margin-bottom: 0.75rem;
+    padding: 0;
+    max-height: 70vh;
   }
   &-title {
     color: $color__font-green;
     font-family: $font__body, sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-align: left;
-    letter-spacing: 2px;
     margin-bottom: 0.75rem;
     font-weight: 800;
-    width: 100%;
+    max-width: 100%;
 
     &:visited {
       color: $color__link-hover;
@@ -159,11 +172,11 @@
     color: $color__text-black;
     border: 1px solid black;
     text-decoration: none;
-    padding: 1rem;
-    margin-bottom: 0.75rem;
+    // padding: 1rem;
+    margin-bottom: 0.25rem;
     width: 40%;
     height: 36%;
-    padding: 8px;
+    // padding: 8px;
     text-align: center;
     &:hover {
       background-color: $color__font-green;
@@ -268,14 +281,10 @@ h2.front-page-title {
   text-transform: uppercase;
 }
 
-h3 {
-  font-weight: bold;
-  font-size: 2em;
-}
-
 .journal-entry-container {
   height: 200px;
   overflow: hidden;
+  height: 240px;
 
   img {
     min-width: 100%;

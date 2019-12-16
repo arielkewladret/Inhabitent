@@ -45,14 +45,23 @@
       overflow: hidden;
       text-decoration: none;
     }
+    .product-price {
+      background-color: white;
+      z-index: 999;
+    }
   }
 }
 
-// .product-info::after {
-//   content: ' ....................';
-//   // position: center;
-//   overflow: hidden;
-// }
+.entry-shop-item {
+  white-space: nowrap;
+  position: relative;
+  &::after {
+    position: absolute;
+    bottom: 0;
+    content: ' ...................................................................................';
+    overflow: hidden;
+  }
+}
 
 article {
   margin: 0;

@@ -140,8 +140,10 @@ button.search-button {
 
 .search-submit {
   color: $color__font-green;
+}
 
-  &.grey {
+.grey {
+  .search-submit {
     color: white;
   }
 }
@@ -151,12 +153,6 @@ button.search-button {
   font-family: 'Font Awesome 5 Free';
   font-weight: 600;
   padding-right: 20px;
-
-  &.grey {
-    button {
-      color: white;
-    }
-  }
 }
 
 // .search-input {

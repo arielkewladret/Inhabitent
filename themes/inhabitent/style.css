@@ -361,11 +361,6 @@ input[type='submit'] {
   background-color: transparent;
   font-family: "Novecento Sans Web";
   cursor: text; }
-  button:hover,
-  input[type='button']:hover,
-  input[type='reset']:hover,
-  input[type='submit']:hover {
-    border-color: transparent; }
   button:active, button:focus,
   input[type='button']:active,
   input[type='button']:focus,
@@ -455,17 +450,15 @@ button.search-button button {
 
 .search-submit {
   color: #248a83; }
-  .search-submit.grey {
-    color: white; }
+
+.grey .search-submit {
+  color: white; }
 
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 600;
   padding-right: 20px; }
-  .fa.grey button,
-  .fas.grey button {
-    color: white; }
 
 .search-input.show {
   display: inline-block;
@@ -598,11 +591,6 @@ content-area .sticky {
 .single .byline,
 .group-blog .byline {
   display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 0 auto; }
 
 .page-links {
   clear: both;
@@ -759,6 +747,18 @@ object {
       color: black;
       overflow: hidden;
       text-decoration: none; }
+    .shop-container-grid .product .product-price {
+      background-color: white;
+      z-index: 999; }
+
+.entry-shop-item {
+  white-space: nowrap;
+  position: relative; }
+  .entry-shop-item::after {
+    position: absolute;
+    bottom: 0;
+    content: ' ...................................................................................';
+    overflow: hidden; }
 
 article {
   margin: 0;
@@ -991,6 +991,7 @@ h1.entry-title {
       background: #248a83;
       color: white; }
     .blog .entry-header img {
+      vertical-align: bottom;
       -o-object-fit: cover;
          object-fit: cover;
       min-width: 100%;
@@ -1000,8 +1001,6 @@ h1.entry-title {
   top: 0px;
   left: 0px;
   text-align: left; }
-  .entry-title:hover {
-    color: #fff9c0; }
   .entry-title a {
     text-decoration: none;
     background-color: transparent;
@@ -1036,7 +1035,8 @@ h1.entry-title {
   .fp-term img {
     max-width: 64px; }
   .fp-term-link {
-    display: block; }
+    display: block;
+    width: 30% 30%; }
 
 .fp-adventures {
   display: grid;
@@ -1069,14 +1069,19 @@ h1.entry-title {
 .adventures-section {
   margin: 50px; }
 
-.fp-adventures-blog-tag {
+img.fp-adventures-blog-tag {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); }
+
+h3.fp-adventures-blog {
   position: absolute;
-  color: red;
+  color: white;
+  top: 0;
   font-family: "Merriweather Web", serif;
-  font-weight: 400;
-  font-size: 1.5;
+  font-weight: 800;
+  font-size: 2em;
   text-transform: none; }
-  .fp-adventures-blog-tag a {
+  h3.fp-adventures-blog a {
     color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1091,10 +1096,9 @@ h1.entry-title {
     font-family: "Novecento Sans Web";
     color: white;
     text-decoration: none; }
-    .fp-adventures-blog-tag a:hover {
+    h3.fp-adventures-blog a:hover {
       color: #fff9c0; }
-  .fp-adventures-blog-tag:hover {
-    color: #fff9c0;
+  h3.fp-adventures-blog:hover {
     outline: 0; }
 
 .fp-journal-entry {
@@ -1123,8 +1127,7 @@ h1.entry-title {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px; }
+          flex-direction: column; }
   .fp-journal-info .fp-journal-info-btn:hover {
     color: white;
     text-decoration: none; }
@@ -1132,18 +1135,18 @@ h1.entry-title {
     color: #404040;
     font-size: 0.75rem;
     font-family: "Merriweather Web";
-    margin-bottom: 0.75rem; }
+    padding: 0;
+    max-height: 70vh; }
   .fp-journal-info-title {
     color: #248a83;
     font-family: "Novecento Sans Web", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-align: left;
-    letter-spacing: 2px;
     margin-bottom: 0.75rem;
     font-weight: 800;
-    width: 100%; }
+    max-width: 100%; }
     .fp-journal-info-title:visited {
       color: midnightblue; }
   .fp-journal-info-btn {
@@ -1151,11 +1154,9 @@ h1.entry-title {
     color: black;
     border: 1px solid black;
     text-decoration: none;
-    padding: 1rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.25rem;
     width: 40%;
     height: 36%;
-    padding: 8px;
     text-align: center; }
     .fp-journal-info-btn:hover {
       background-color: #248a83;
@@ -1247,13 +1248,10 @@ h2.front-page-title {
   letter-spacing: 2px;
   text-transform: uppercase; }
 
-h3 {
-  font-weight: bold;
-  font-size: 2em; }
-
 .journal-entry-container {
   height: 200px;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 240px; }
   .journal-entry-container img {
     min-width: 100%;
     min-height: 100%; }
@@ -1347,7 +1345,8 @@ h3 {
  * about page
  */
 .about-content-area {
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
 
 .page-template-default .fp-banner {
   display: -webkit-box;
@@ -1368,19 +1367,28 @@ h3 {
   padding: 20px;
   font-family: 'Novecento Sans Web', sans-serif; }
 
-.entry-content {
-  font-size: 1.5rem;
-  font-weight: 300; }
-
 .about-container {
-  width: 70%; }
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 80px; }
 
 .entry-title-about {
   color: white;
   text-align: center;
   font-size: 3em;
   padding: 20px;
-  font-family: 'Novecento Sans Web', sans-serif; }
+  font-family: 'Novecento Sans Web', sans-serif;
+  margin-top: 5%; }
+
+.entry-content-about {
+  margin: 0 20%;
+  line-height: 2em;
+  font-size: 1em;
+  text-align: left;
+  max-width: 800px; }
+
+.entry-header-about {
+  padding-top: 4%; }
 
 .site-footer {
   -webkit-box-pack: justify;
@@ -1513,7 +1521,7 @@ li:hover {
   line-height: 1.5;
   margin-bottom: 0.75rem;
   width: 100%;
-  padding: 3rem; }
+  padding: 1rem; }
 
 .footer-container {
   color: white; }
@@ -1523,7 +1531,7 @@ li:hover {
   .footer-logo img {
     width: 285px; }
 
-h3 {
+h3.footer-title {
   color: #d99054;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -1546,7 +1554,7 @@ h3 {
 
 .hours {
   padding: 0px;
-  margin-right: 300px; }
+  margin-right: 150px; }
 
 span.days-of-operation {
   font-weight: bold; }
